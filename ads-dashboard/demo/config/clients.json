@@ -1,0 +1,90 @@
+{
+  "settings": {
+    "timezone": "America/New_York",
+    "flag_min_spend": 50,
+    "run_note": "Demo data: every number on this page is made up."
+  },
+  "clients": [
+    {
+      "name": "Corner Cafe",
+      "currency": "USD",
+      "goal": {
+        "kind": "ecom",
+        "cost_target": 18,
+        "count_noun": "Online orders",
+        "cost_label": "Cost per online order",
+        "notes": [
+          "$18 max per online order (average order is about $32)"
+        ]
+      },
+      "accounts": [
+        {
+          "platform": "meta",
+          "account_id": "100000000000001",
+          "account_name": "Corner Cafe (Meta)",
+          "result_type": "purchase",
+          "conversion_event": "Purchase"
+        }
+      ]
+    },
+    {
+      "name": "Bright Dental",
+      "currency": "USD",
+      "goal": {
+        "kind": "leads",
+        "cost_target": null,
+        "count_noun": "Leads (Google + Meta)",
+        "cost_label": "Blended cost per lead",
+        "platform_targets": {
+          "google": 70,
+          "meta": 25
+        },
+        "monthly_target": 60,
+        "monthly_stretch": 75,
+        "monthly_note": "60+ new-patient leads a month",
+        "target_text": "Per platform: Google $70/lead, Meta $25/lead",
+        "notes": [
+          "New-patient leads: calls and form fills"
+        ]
+      },
+      "accounts": [
+        {
+          "platform": "google",
+          "account_id": "1234567890",
+          "account_name": "Bright Dental (Google)",
+          "result_type": "call",
+          "conversion_event": "Calls from ads"
+        },
+        {
+          "platform": "meta",
+          "account_id": "100000000000002",
+          "account_name": "Bright Dental (Meta)",
+          "result_type": "lead",
+          "conversion_event": "Lead form"
+        }
+      ]
+    },
+    {
+      "name": "Green Thumb Landscaping",
+      "currency": "USD",
+      "goal": {
+        "kind": "leads",
+        "cost_target": 45,
+        "count_noun": "Quote requests",
+        "cost_label": "Cost per quote request",
+        "notes": [
+          "$45 max per quote request in the service area"
+        ]
+      },
+      "accounts": [
+        {
+          "platform": "google",
+          "account_id": "2345678901",
+          "account_name": "Green Thumb Landscaping (Google)",
+          "result_type": "lead",
+          "conversion_event": "Quote form submit"
+        }
+      ]
+    }
+  ]
+}

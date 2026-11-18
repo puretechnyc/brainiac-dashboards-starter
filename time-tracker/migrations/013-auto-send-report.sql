@@ -1,0 +1,1 @@
+ALTER TABLE clients ADD COLUMN auto_send_report INTEGER NOT NULL DEFAULT 0;

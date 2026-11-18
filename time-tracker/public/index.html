@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Time Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700&family=Oswald:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  
+  <link rel="stylesheet" href="./redesign.css" />
+  
+  <script>window.APP_API_BASE = "";</script>
+</head>
+<body>
+  <main id="app">
+    
+    
+    <section id="view-login" class="view">
+      <div class="login">
+        <div class="art">
+          <div class="brand" style="padding:0">
+            <span class="mark">TT</span>
+            <span class="nm" style="color:#F5F1EA">Time Tracker<small style="color:#b9b5ad">Your Company</small></span>
+          </div>
+          <div>
+            <div class="eyebrow" style="margin-bottom:14px">Time, billing and teams</div>
+            <h2>Every hour, every client, in one place.</h2>
+            <p>Log time by department, keep each client on target and bill from approved hours.</p>
+          </div>
+          <span class="eyebrow">All times Eastern</span>
+        </div>
+        <div class="frm">
+          <form id="login-form" novalidate>
+            <div class="brand" style="padding:0 0 6px">
+              <span class="mark">TT</span>
+              <span class="nm">Time Tracker</span>
+            </div>
+            <h1>Sign in</h1>
+            <p class="muted" style="margin:-6px 0 4px">Use your work account.</p>
+            
+            <div id="google-signin-wrap" class="hidden">
+              <button type="button" id="google-signin-btn" class="btn lg" style="width:100%">Sign in with Google</button>
+              <div class="or">or</div>
+            </div>
+            <label class="field"><span>Email</span><input class="in" type="email" name="email" autocomplete="email" required /></label>
+            <label class="field"><span>Password</span><input class="in" type="password" name="password" autocomplete="current-password" required /></label>
+            <button class="btn primary lg" type="submit" style="width:100%">Sign in</button>
+            <p id="login-err" class="err"></p>
+            <p class="note" style="margin:0">Accounts are created by an administrator. Ask an admin to
+               provision your account. The Google button shows only when Google sign-in is configured.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="view-app" class="view hidden">
+      <div class="shell">
+
+      
+      <aside class="side" id="side" aria-label="Main">
+        <div class="brand">
+          <span class="mark">TT</span>
+          <span class="nm">Time Tracker<small>Your Company</small></span>
+        </div>
+        <nav class="nav" id="nav">
+          <div class="nav-grp eyebrow">Track</div>
+          <a href="#dashboard" class="tab emp-tab" data-tab="dashboard" data-icon="dash">Dashboard</a>
+          <a href="#log" class="tab emp-tab" data-tab="log" data-icon="clock">Log hours</a>
+          <a href="#timesheets" class="tab emp-tab" data-tab="timesheets" data-icon="sheet">Timesheets</a>
+
+          <div class="nav-grp eyebrow">Billing</div>
+          <a href="#invoices" class="tab emp-tab" data-tab="invoices" data-icon="invoice">Invoices</a>
+          <a href="#reports" class="tab emp-tab" data-tab="reports" data-icon="reports">Reports</a>
+
+          <div class="nav-grp eyebrow">People</div>
+          <a href="#clients" class="tab emp-tab" data-tab="clients" data-icon="clients">Clients</a>
+          <a href="#team" class="tab emp-tab" data-tab="team" data-icon="team">Team</a>
+          <a href="#assignments" class="tab emp-tab" data-tab="assignments" data-icon="target">Assignments</a>
+          <a href="#requests" class="tab emp-tab" data-tab="requests" data-icon="req">Requests</a>
+          
+          <a href="#hour-budgets" class="tab emp-tab" data-tab="hour-budgets" data-icon="budget">Hour budgets</a>
+
+          <div class="nav-grp eyebrow">Settings</div>
+          <a href="#admin" class="tab emp-tab" data-tab="admin" data-icon="admin">Admin</a>
+
+          
+          <div class="nav-grp eyebrow" data-group="client">Client portal</div>
+          <a href="#client-dashboard" class="tab client-tab" data-tab="client-dashboard" data-icon="dash">Overview</a>
+          <a href="#client-activity" class="tab client-tab" data-tab="client-activity" data-icon="clock">Activity</a>
+          <a href="#client-invoices" class="tab client-tab" data-tab="client-invoices" data-icon="invoice">Invoices</a>
+
+          
+          <div id="nav-registered"></div>
+        </nav>
+        <div class="foot">
+          <div class="me">
+            <span class="avatar" id="me-avatar">PM</span>
+            <div class="who">
+              <b id="me-name"></b>
+              <span id="who-text"></span>
+            </div>
+          </div>
+          <div id="whoami" class="foot-links whoami hidden">
+            <button id="feedback-btn" class="link" title="Send feedback about this platform">Feedback</button>
+            <button id="change-pw-btn" class="link">Change password</button>
+            <button id="logout-btn" class="link">Log out</button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="top">
+          <button class="iconbtn burger" id="burger" aria-label="Open menu" aria-expanded="false"></button>
+          <div class="crumb"><span id="crumb-text">Dashboard</span></div>
+          <span class="sp"></span>
+          <span class="tz" title="Every date and time in Time Tracker uses US Eastern Time">
+            <span class="lg">All times Eastern</span>
+          </span>
+          
+          <div class="timer-pill" id="timer-pill">
+            <span class="pulse" aria-hidden="true"></span>
+            <span class="lbl3 muted" id="pill-client">No timer</span>
+            <span class="t" id="pill-clock">0:00:00</span>
+            <button class="go" id="pill-stop" aria-label="Stop timer"></button>
+          </div>
+          <div id="notif-bell" class="notif-bell hidden" title="Notifications" role="button" tabindex="0" aria-label="Notifications">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+            </svg>
+            <span id="notif-count" class="notif-count hidden">0</span>
+            <div id="notif-dropdown" class="notif-dropdown hidden">
+              <div class="notif-header">Notifications</div>
+              <div id="notif-list" class="notif-list"></div>
+            </div>
+          </div>
+          <button class="iconbtn hide-m" id="theme-btn" aria-label="Switch to the light theme"></button>
+        </header>
+
+        
+        <div class="content" id="main-content">
+
+      
+      <div id="timer-widget" class="card timer-widget hidden">
+        <div id="timer-idle" class="timer-state">
+          <div class="timer-controls">
+            <select id="timer-client" required></select>
+            <input id="timer-task" type="text" placeholder="Project / task" />
+            <button id="timer-start-btn" class="timer-btn start">Start Timer</button>
+          </div>
+        </div>
+        <div id="timer-running" class="timer-state hidden">
+          <div class="timer-display">
+            <span class="timer-label">Timer running:</span>
+            <span id="timer-client-name" class="timer-info"></span>
+            <span id="timer-task-name" class="timer-info muted"></span>
+            <span id="timer-elapsed" class="timer-clock">00:00:00</span>
+            <button id="timer-stop-btn" class="timer-btn stop">Stop</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="tab-dashboard" class="tabpane">
+        
+        <div id="weekly-out"></div>
+        
+        <div id="hour-budget-out"></div>
+        <div id="dashboard-out"></div>
+      </div>
+
+      
+      <div id="tab-log" class="tabpane hidden">
+        
+        <div id="weekly-pie-container" class="weekly-pie-container hidden">
+          <div class="weekly-pie-header">
+            <h3 class="weekly-pie-title">This Week</h3>
+            <span id="weekly-pie-range" class="weekly-pie-range"></span>
+          </div>
+          <div class="weekly-pie-body">
+            <svg id="weekly-pie-svg" class="weekly-pie-svg" viewBox="0 0 200 200" width="160" height="160"></svg>
+            <div id="weekly-pie-legend" class="weekly-pie-legend"></div>
+          </div>
+        </div>
+
+        
+        <div class="tracker-bar">
+          <form id="entry-form" class="tracker-bar-inner">
+            <input type="text" name="project_task" id="tracker-task" class="tracker-task-input" placeholder="What are you working on?" autocomplete="off" />
+            <select name="client_id" id="entry-client" class="tracker-client-select" required></select>
+            <select name="department_id" id="entry-department" class="tracker-client-select" required title="Department (required)">
+              <option value="" disabled selected>Select a department&hellip;</option>
+            </select>
+            
+            <label class="tracker-for hidden" id="entry-for-wrap" title="Log these hours for someone else (leave blank to log for yourself)">
+              <span class="tracker-for-label">For</span>
+              <input type="search" id="entry-for" list="entry-for-staff" placeholder="me" aria-label="Log these hours for (admin only; blank means you)" autocomplete="off" />
+              <datalist id="entry-for-staff"></datalist>
+            </label>
+            <label class="tracker-billable" title="Billable">
+              <input type="checkbox" name="is_billable" checked />
+              <span class="tracker-billable-icon">$</span>
+            </label>
+            
+            <label class="tracker-date" title="Date to log against (defaults to today; pick any past date)">
+              <svg class="tracker-date-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              <input type="date" name="entry_date" id="entry-date" class="tracker-date-input" aria-label="Date to log hours against" />
+            </label>
+            
+            <input type="hidden" name="entry_type" id="entry-type" value="work" />
+            <input type="hidden" name="notes" id="entry-notes" value="" />
+            <input type="hidden" name="hours" id="tracker-hours" />
+            
+            <button type="button" id="tracker-mode-toggle" class="tracker-mode-toggle" title="Switch between timer and manual mode">
+              <svg id="mode-icon-timer" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <svg id="mode-icon-manual" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </button>
+            
+            <div id="tracker-time-pickers" class="tracker-time-pickers hidden">
+              <input type="text" id="tracker-start-time" class="tracker-time-input" placeholder="09:00" title="Start time (24-hour, e.g. 0900 or 09:00)" maxlength="5" inputmode="numeric" autocomplete="off" />
+              <span class="tracker-time-sep">-</span>
+              <input type="text" id="tracker-end-time" class="tracker-time-input" placeholder="17:00" title="End time (24-hour, e.g. 1700 or 17:00)" maxlength="5" inputmode="numeric" autocomplete="off" />
+            </div>
+            
+            <div id="tracker-quick" class="tracker-quick hidden" role="group" aria-label="Quick duration">
+              <button type="button" class="tracker-quick-btn" data-min="15">15m</button>
+              <button type="button" class="tracker-quick-btn" data-min="30">30m</button>
+              <button type="button" class="tracker-quick-btn" data-min="45">45m</button>
+              <button type="button" class="tracker-quick-btn" data-min="60">1h</button>
+            </div>
+            
+            <span id="tracker-timer-display" class="tracker-timer-display">00:00:00</span>
+            
+            <button type="button" id="tracker-start-btn" class="tracker-action-btn tracker-start">START</button>
+            <button type="button" id="tracker-stop-btn" class="tracker-action-btn tracker-stop hidden">STOP</button>
+            
+            <button type="submit" id="tracker-log-btn" class="tracker-action-btn tracker-log hidden" title="Log manual entry">ADD</button>
+          </form>
+          <div class="tracker-week-total">
+            <span class="tracker-week-label">This week</span>
+            <span id="tracker-week-hours" class="tracker-week-value">0:00:00</span>
+          </div>
+        </div>
+        <p id="entry-err" class="err tracker-err"></p>
+        <p id="tracker-time-hint" class="tracker-time-hint" role="status" aria-live="polite"></p>
+
+        
+        <div id="entries-grouped"></div>
+        <div id="entries-pagination" class="pagination"></div>
+      </div>
+
+      
+      <div id="tab-timesheets" class="tabpane hidden">
+        <div id="ts-week-header" class="ts-week-header"></div>
+        <div id="timesheets-out"></div>
+        <div id="timesheets-pagination" class="pagination hidden"></div>
+      </div>
+
+      
+      <div id="tab-report" class="tabpane hidden">
+        <h2>Per-client report</h2>
+        <form id="report-form" class="card row">
+          <label>Client <select name="client_id" id="report-client" required></select></label>
+          <label>From <span class="date-field"><input type="date" name="from" id="report-from" /><button type="button" class="date-cal-btn" data-cal-for="report-from" aria-label="Open calendar" title="Pick a date">&#128197;</button></span></label>
+          <label>To <span class="date-field"><input type="date" name="to" id="report-to" /><button type="button" class="date-cal-btn" data-cal-for="report-to" aria-label="Open calendar" title="Pick a date">&#128197;</button></span></label>
+          <button type="submit">Run report</button>
+        </form>
+        <div id="report-out"></div>
+      </div>
+
+      
+      <div id="tab-invoices" class="tabpane hidden">
+        <h2>Invoices</h2>
+
+        
+        <div id="invoice-generate-section" class="card" style="margin-bottom:16px">
+          <details id="invoice-generate-details">
+            <summary style="cursor:pointer;font-weight:600;padding:4px 0">Generate New Invoice</summary>
+            <p class="muted small" style="margin-top:8px">Rolls up billable, not-yet-invoiced entries for the client + period.
+              Uses the client's billing model (hourly/milestone/retainer).</p>
+            <form id="invoice-form" class="row" style="margin-top:8px">
+              <label>Client <select name="client_id" id="invoice-client" required></select></label>
+              <label>Period start <input type="date" name="period_start" required /></label>
+              <label>Period end <input type="date" name="period_end" required /></label>
+              <label>Due date <input type="date" name="due_date" /></label>
+              <label>Notes <input type="text" name="notes" placeholder="Optional notes" /></label>
+              <button type="submit">Generate</button>
+            </form>
+            <div id="invoice-out"></div>
+            <p id="invoice-err" class="err"></p>
+          </details>
+        </div>
+
+        
+        <div class="card row" id="invoice-filters">
+          <label>Client <select id="inv-filter-client"><option value="">All clients</option></select></label>
+          <label>Status
+            <select id="inv-filter-status">
+              <option value="">All</option>
+              <option value="draft">Draft</option>
+              <option value="sent">Sent</option>
+              <option value="partially_paid">Partially Paid</option>
+              <option value="paid">Paid</option>
+              <option value="void">Void</option>
+            </select>
+          </label>
+          <label>From <input type="date" id="inv-filter-from" /></label>
+          <label>To <input type="date" id="inv-filter-to" /></label>
+          <button id="inv-filter-btn">Filter</button>
+        </div>
+        <div id="invoices-list-out"></div>
+        <div id="invoices-pagination" class="pagination"></div>
+      </div>
+
+      
+      <div id="tab-reports" class="tabpane hidden">
+        
+        <div class="rpt-subtabs">
+          <button class="rpt-subtab active" data-rpt="summary">Summary</button>
+          <button class="rpt-subtab" data-rpt="detailed">Detailed</button>
+          <button class="rpt-subtab" data-rpt="weekly">Weekly</button>
+        </div>
+
+        
+        <div class="rpt-filter-bar">
+          <select id="rpt-filter-client">
+            <option value="">All clients</option>
+          </select>
+          <select id="rpt-filter-employee">
+            <option value="">All team</option>
+          </select>
+          <span class="date-field">
+            <input type="date" id="report-sum-from" />
+            <button type="button" class="date-cal-btn" data-cal-for="report-sum-from" aria-label="Open calendar" title="Pick a date">&#128197;</button>
+          </span>
+          <span class="rpt-filter-sep">to</span>
+          <span class="date-field">
+            <input type="date" id="report-sum-to" />
+            <button type="button" class="date-cal-btn" data-cal-for="report-sum-to" aria-label="Open calendar" title="Pick a date">&#128197;</button>
+          </span>
+          <button id="report-sum-btn" class="rpt-apply-btn">Apply Filter</button>
+          <button id="report-export-csv-btn" type="button" class="rpt-export-btn" title="Export time entries as CSV">Export CSV</button>
+          <button id="report-export-pdf-btn" type="button" class="rpt-export-btn" title="Export the time report as PDF">Export PDF</button>
+        </div>
+
+        
+        <div class="rpt-presets" id="rpt-presets">
+          <span class="rpt-group-label">Quick range</span>
+          <button type="button" class="rpt-preset-btn" data-rpt-preset="this-week">This week</button>
+          <button type="button" class="rpt-preset-btn" data-rpt-preset="last-week">Last week</button>
+          <button type="button" class="rpt-preset-btn" data-rpt-preset="this-month">This month</button>
+          <button type="button" class="rpt-preset-btn" data-rpt-preset="last-month">Last month</button>
+        </div>
+
+        
+        <div id="rpt-stats-row" class="rpt-stats-row"></div>
+        
+        <div id="rpt-rows-note" class="rpt-rows-note"></div>
+
+        
+        <div id="rpt-pane-summary" class="rpt-pane">
+          
+          <div id="rpt-chart" class="rpt-chart"></div>
+          <div id="rpt-chart-days" class="rpt-chart"></div>
+          
+          <div class="rpt-group-header">
+            <span class="rpt-group-label">Group by</span>
+            <select id="rpt-group-by">
+              <option value="client">Client</option>
+              <option value="employee">Employee</option>
+              <option value="task">Task</option>
+              <option value="day">Day</option>
+            </select>
+          </div>
+          <div id="rpt-grouped-table" class="rpt-grouped-table"></div>
+        </div>
+
+        <div id="rpt-pane-detailed" class="rpt-pane hidden">
+          <div id="rpt-detailed-table"></div>
+        </div>
+
+        <div id="rpt-pane-weekly" class="rpt-pane hidden">
+          <div id="rpt-weekly-table"></div>
+        </div>
+      </div>
+
+      
+      <div id="tab-budget" class="tabpane hidden">
+        <h2>Weekly Budget</h2>
+        <p class="muted small">Admin only. Per-client weekly hours vs cap. Color-coded by usage level.</p>
+        <div id="budget-summary-cards" class="dashboard-grid"></div>
+        <div id="budget-table-out"></div>
+        <div id="budget-detail-out" class="hidden"></div>
+      </div>
+
+      
+      <div id="tab-clients" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Clients</h2>
+          <div class="clients-toolbar">
+            <select id="clients-filter-status">
+              <option value="active">Show active</option>
+              <option value="archived">Show archived</option>
+              <option value="all">Show all</option>
+            </select>
+            <input type="text" id="clients-search" placeholder="Search by name" class="clients-search-input" />
+            <div class="clients-add-bar">
+              <button id="clients-add-btn" class="clients-add-button">+ Add client</button>
+            </div>
+          </div>
+        </div>
+        <div id="clients-list-out"></div>
+      </div>
+
+      
+
+      
+      <div id="tab-progress" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Progress</h2>
+          <span id="progress-week" class="muted small"></span>
+        </div>
+        <p class="muted small">Target = each client's weekly hours cap. Hours are the same basis as invoices (weighted for clients with member weights; raw hours shown in grey). Behind means under 80% of the pace expected by today.</p>
+        <div id="progress-out"></div>
+      </div>
+
+      
+      <div id="tab-team" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Team</h2>
+          <div class="clients-toolbar">
+            <select id="team-filter-status">
+              <option value="active">Show active</option>
+              <option value="inactive">Show inactive</option>
+              <option value="all">Show all</option>
+            </select>
+            <input type="text" id="team-search" placeholder="Search by name or email" class="clients-search-input" />
+            <button id="team-add-btn" class="clients-add-button">+ Add Team Member</button>
+          </div>
+        </div>
+        <div id="team-list-out"></div>
+      </div>
+
+      
+      <div id="tab-assignments" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Client assignments</h2>
+          <div class="clients-toolbar">
+            <input type="text" id="assign-search" placeholder="Search clients" class="clients-search-input" />
+            <button id="assign-refresh-btn" class="act-btn">Refresh</button>
+          </div>
+        </div>
+        <p class="muted small">
+          Tick the staff who work on a client, then save. Saving replaces the whole set for that
+          client. An assignment says who works on an account — it is not billing, and it does not
+          change what anybody can see in tt.
+        </p>
+        <div id="assignments-out"></div>
+      </div>
+
+      
+      <div id="tab-requests" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Client access requests</h2>
+          <div class="clients-toolbar">
+            <button id="requests-refresh-btn" class="act-btn">Refresh</button>
+          </div>
+        </div>
+        <p class="muted small">
+          You can only log time against a client you are assigned to. Ask for the client here:
+          an admin or a manager approves the request, and the approval assigns you to it.
+        </p>
+        <form id="request-form" class="request-form">
+          <select id="request-client" required></select>
+          <input type="text" id="request-note" placeholder="Why do you need this client?" />
+          <button type="submit" class="act-btn">Request access</button>
+        </form>
+        <div id="request-err" class="err"></div>
+        <div id="requests-out"></div>
+      </div>
+
+      
+      <div id="tab-hour-budgets" class="tabpane hidden">
+        <div class="clients-header">
+          <h2>Weekly hour budgets</h2>
+          <div class="clients-toolbar">
+            <input type="date" id="hb-week" class="clients-search-input" />
+            <button id="hb-refresh-btn" class="act-btn">Refresh</button>
+          </div>
+        </div>
+        <p class="muted small">
+          A budget is how many hours a person may work in a week, Monday to Sunday Eastern.
+          Only work hours count — breaks, time off, sick days and holidays do not. When the
+          budget is reached, clock-in is blocked for the rest of that week; an admin can grant
+          more hours and unlock it.
+        </p>
+
+        <div id="hb-me"></div>
+
+        <h3 id="hb-request-heading">Ask for more hours</h3>
+        <form id="hb-request-form" class="request-form">
+          <input type="number" id="hb-request-hours" min="0.25" step="0.25" placeholder="Extra hours" />
+          <input type="text" id="hb-request-reason" placeholder="Why do you need more hours?" />
+          <button type="submit" class="act-btn">Ask an admin</button>
+        </form>
+        <div id="hb-err" class="err"></div>
+
+        <div id="hb-queue"></div>
+        <div id="hb-overview"></div>
+        <div id="hb-set"></div>
+      </div>
+
+      
+      <div id="tab-admin" class="tabpane hidden">
+        <h2>Admin Panel</h2>
+
+        
+        <div class="card">
+          <h3>User Management</h3>
+          <p class="muted small">Manage user roles and account status. Deactivating a user immediately logs them out.</p>
+          <div id="admin-users-out"></div>
+        </div>
+
+        
+        <div class="card" id="departments-card">
+          <h3>Departments</h3>
+          <p class="muted small">The agency-wide list the team logs hours against. Every client uses the same departments. Archiving keeps past hours but removes a department from the Log hours dropdown; renaming keeps all past hours on it.</p>
+          <div class="row" style="display:flex;gap:10px;align-items:end;flex-wrap:wrap">
+            <label>New department <input type="text" id="dept-new-name" maxlength="120" placeholder="e.g. Email Marketing" /></label>
+            <button id="dept-add-btn" type="button">Add department</button>
+            <label class="small muted" style="display:flex;align-items:center;gap:6px"><input type="checkbox" id="dept-show-archived" /> Show archived</label>
+          </div>
+          <p id="dept-err" class="err" style="margin-top:6px"></p>
+          <div id="departments-out" style="margin-top:12px"></div>
+        </div>
+
+        
+        <div class="card">
+          <h3>Lock Entries Before Date</h3>
+          <p class="muted small">Lock all time entries before a specific date. This approves and locks all entries, making them immutable.</p>
+          <div class="row" style="display:flex;gap:10px;align-items:end">
+            <label>Before date <input type="date" id="lock-before-date" required /></label>
+            <button id="lock-before-btn">Lock entries</button>
+          </div>
+          <p id="lock-before-result" class="small" style="margin-top:8px"></p>
+        </div>
+
+        
+        <div class="card">
+          <h3>Client Team Weights</h3>
+          <p class="muted small">Set per-member hour weights for each client. A weight of 3:1 means 3 logged hours count as 1 allotment hour.</p>
+          <div class="row" style="display:flex;gap:10px;align-items:end;flex-wrap:wrap">
+            <label>Client
+              <select id="weights-client-select"><option value="">-- select client --</option></select>
+            </label>
+            <button id="weights-load-btn">Load Weights</button>
+          </div>
+          <div id="weights-out" style="margin-top:12px"></div>
+        </div>
+
+        
+        <div class="card">
+          <h3>Platform Feedback</h3>
+          <p class="muted small">Feedback filed by users from inside the app. Mark an item done once it has been actioned.</p>
+          <div class="row" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <label>Show
+              <select id="feedback-filter-status">
+                <option value="open">Open</option>
+                <option value="done">Done</option>
+                <option value="">All</option>
+              </select>
+            </label>
+            <button id="feedback-refresh-btn" class="link">Refresh</button>
+            <span id="feedback-counts" class="muted small"></span>
+          </div>
+          <div id="admin-feedback-out" style="margin-top:12px"></div>
+        </div>
+      </div>
+
+      
+      
+      
+
+      
+      <div id="tab-client-dashboard" class="tabpane hidden">
+        <h2>Your Dashboard</h2>
+        <div id="client-dashboard-out" class="dashboard-grid"></div>
+        <div id="client-hours-bar-container"></div>
+        <div id="client-weekly-trend"></div>
+        <div id="client-goals-updates"></div>
+        <div id="client-recent-activity"></div>
+        <div id="client-invoices-preview"></div>
+      </div>
+
+      
+      <div id="tab-client-activity" class="tabpane hidden">
+        <h2>Activity Log</h2>
+        <p class="muted small">Billable work performed on your account. Showing task descriptions and hours logged.</p>
+        <div class="card row" id="client-activity-filters">
+          <label>From <input type="date" id="client-act-from" /></label>
+          <label>To <input type="date" id="client-act-to" /></label>
+          <button id="client-act-filter-btn">Filter</button>
+        </div>
+        <div id="client-activity-out"></div>
+        <div id="client-activity-pagination" class="pagination"></div>
+      </div>
+
+      
+      <div id="tab-client-invoices" class="tabpane hidden">
+        <h2>Your Invoices</h2>
+        <p class="muted small">View invoices and payment history for your account.</p>
+        <div id="client-invoices-out"></div>
+        <div id="client-invoices-pagination" class="pagination"></div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="muted small">
+    Time Tracker. Integrations: Brevo email, auto-report, PayPal scaffold, CSV and PDF export.
+    Client isolation enforced server-side.
+  </footer>
+
+  
+  <div id="edit-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Edit Entry</h3>
+      <form id="edit-entry-form">
+        <input type="hidden" name="entry_id" />
+        <label>Project / task <input name="project_task" /></label>
+        <label>Date <input type="date" name="entry_date" /></label>
+        <label>Hours <input type="number" name="hours" step="any" min="0" max="24" /></label>
+        <label class="check"><input type="checkbox" name="is_billable" /> Billable</label>
+        <label>Entry type
+          <select name="entry_type">
+            <option value="work">Work</option>
+            <option value="break">Break</option>
+            <option value="time_off">Time Off</option>
+            <option value="sick">Sick</option>
+            <option value="holiday">Holiday</option>
+          </select>
+        </label>
+        <label>Notes <textarea name="notes" rows="2"></textarea></label>
+        <label>Reason for edit (required) <input name="reason" required placeholder="Why are you making this change?" /></label>
+        <div class="modal-actions">
+          <button type="submit">Save changes</button>
+          <button type="button" id="edit-cancel" class="link">Cancel</button>
+        </div>
+        <p id="edit-err" class="err"></p>
+      </form>
+      <div id="edit-history" class="edit-history"></div>
+    </div>
+  </div>
+
+  
+  <div id="reject-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Reject Timesheet</h3>
+      <form id="reject-ts-form">
+        <input type="hidden" name="timesheet_id" />
+        <label>Reason for rejection (required)
+          <textarea name="reason" rows="3" required placeholder="Explain why this timesheet is being rejected..."></textarea>
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="danger-btn">Reject</button>
+          <button type="button" id="reject-cancel" class="link">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="feedback-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Send feedback</h3>
+      <p class="muted small">Tell us what's working, what's broken, or what you'd like changed. Your note is logged for the team to action.</p>
+      <form id="feedback-form">
+        <label>Page / area
+          <input type="text" name="page" id="feedback-page" placeholder="e.g. Log hours" maxlength="300" />
+        </label>
+        <label>Your feedback
+          <textarea name="message" id="feedback-message" rows="4" required maxlength="4000" placeholder="Describe the issue or idea..."></textarea>
+        </label>
+        <div class="modal-actions">
+          <button type="submit">Send feedback</button>
+          <button type="button" id="feedback-cancel" class="link">Cancel</button>
+        </div>
+        <p id="feedback-err" class="err"></p>
+        <p id="feedback-ok" class="small" style="color:var(--ok)"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="client-add-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Add client</h3>
+      <form id="client-add-form">
+        <label>Name <input type="text" name="name" required maxlength="120" /></label>
+        <label>Currency
+          <select name="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+          </select>
+        </label>
+        <div class="proj-section">
+          <div class="color-board-label">Projects (add as many as you need; they use this client's colour)</div>
+          <div id="client-add-projects" class="proj-rows"></div>
+        </div>
+        <div class="color-board-label">Colour</div>
+        <div id="client-add-color-board" class="color-board-host"></div>
+        <div class="modal-actions">
+          <button type="submit">Add client</button>
+          <button type="button" id="client-add-cancel" class="link">Cancel</button>
+        </div>
+        <p id="client-add-err" class="err"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="change-pw-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Change password</h3>
+      <form id="change-pw-form" autocomplete="off">
+        <label>Current password <input type="password" name="current_password" required autocomplete="current-password" /></label>
+        <label>New password (at least 12 characters) <input type="password" name="new_password" required minlength="12" autocomplete="new-password" /></label>
+        <label>Repeat new password <input type="password" name="repeat" required minlength="12" autocomplete="new-password" /></label>
+        <div class="modal-actions">
+          <button type="submit">Change password</button>
+          <button type="button" id="change-pw-cancel" class="link">Cancel</button>
+        </div>
+        <p id="change-pw-msg" class="err"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="reset-pw-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Reset password</h3>
+      <p class="small">For <strong id="reset-pw-who"></strong>. They are signed out everywhere and any login lockout is cleared.</p>
+      <form id="reset-pw-form" autocomplete="off">
+        <input type="hidden" name="uid" />
+        <label>Type a new password (at least 12 characters)
+          <input type="password" name="new_password" id="reset-pw-input" autocomplete="new-password" />
+        </label>
+        <label class="check"><input type="checkbox" id="reset-pw-show" /> Show password</label>
+        <p id="reset-pw-err" class="err"></p>
+        <div class="modal-actions">
+          <button type="submit">Set this password</button>
+          <button type="button" id="reset-pw-generate" class="act-btn">Generate one for me</button>
+          <button type="button" id="reset-pw-cancel" class="link">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="temp-pw-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Temporary password</h3>
+      <p class="small">Password reset for <strong id="temp-pw-who"></strong>. Give them this password; <strong>it is shown only once</strong>. They are signed out everywhere and any login lockout is cleared. Ask them to change it after signing in (top right, "change password").</p>
+      <div class="temp-pw-box"><code id="temp-pw-value"></code> <button type="button" id="temp-pw-copy" class="act-btn">Copy</button></div>
+      <div class="modal-actions"><button type="button" id="temp-pw-close">Done</button></div>
+    </div>
+  </div>
+
+  
+  <div id="team-add-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Add Team Member</h3>
+      <form id="team-add-form">
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Display Name <input type="text" name="display_name" /></label>
+        <label>Password <input type="password" name="password" required minlength="12" /></label>
+        <label>Hourly Rate <input type="number" name="cost_rate" step="0.01" min="0" placeholder="e.g. 18.00" /></label>
+        <label>Role
+          <select name="role">
+            <option value="employee">Employee</option>
+            <option value="admin">Admin</option>
+          </select>
+        </label>
+        <div class="modal-actions">
+          <button type="submit">Add Member</button>
+          <button type="button" id="team-add-cancel" class="link">Cancel</button>
+        </div>
+        <p id="team-add-err" class="err"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="team-edit-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3>Edit team member</h3>
+      <form id="team-edit-form">
+        <input type="hidden" name="uid" />
+        <p class="small muted" id="team-edit-email"></p>
+        <label>Display name <input type="text" name="display_name" required maxlength="120" /></label>
+        <label>Role
+          <select name="role">
+            <option value="employee">Employee</option>
+            <option value="admin">Admin</option>
+          </select>
+        </label>
+        <p id="team-edit-self" class="small muted hidden">You cannot change your own role.</p>
+        <label>Hourly rate (what we pay them, $/hour) <input type="number" name="cost_rate" step="0.01" min="0" placeholder="e.g. 18.00" /></label>
+        <div class="modal-actions">
+          <button type="submit">Save</button>
+          <button type="button" id="team-edit-cancel" class="link">Cancel</button>
+        </div>
+        <p id="team-edit-err" class="err"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="client-edit-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h3 id="client-edit-title">Edit Client</h3>
+      <form id="client-edit-form">
+        <input type="hidden" name="client_id" />
+        <label>Name <input type="text" name="name" required /></label>
+        <label>Weekly Hours Cap <input type="number" name="hours_cap" min="0" step="0.5" /></label>
+        
+        <div class="sec" id="client-edit-billing">
+          <div class="sec-h"><h3 style="margin:0;font-size:16px;font-weight:650">Billing model</h3>
+            <span class="hint" style="color:var(--muted);font-size:12.5px">How this client is billed</span></div>
+          <div class="modelpick" id="client-edit-modelpick">
+            <label><input type="radio" name="billing_model" value="hourly" /><b>Hourly</b><span>Hours against a rate</span></label>
+            <label><input type="radio" name="billing_model" value="milestone_weekly" /><b>Weekly milestone</b><span>A set amount every week</span></label>
+            <label><input type="radio" name="billing_model" value="monthly_retainer" /><b>Monthly retainer</b><span>A set amount every month</span></label>
+            <label><input type="radio" name="billing_model" value="fixed_project" /><b>Fixed project</b><span>One amount for the project</span></label>
+            <label><input type="radio" name="billing_model" value="profit_share" /><b>Profit share</b><span>A share of what the client earns</span></label>
+          </div>
+          
+          <div id="client-edit-hourly" class="hidden">
+            <label class="field"><span>Hourly rate ($ per hour)</span>
+              <span class="in-pre"><em>$</em><input class="in" type="number" name="rate_dollars" min="0" step="0.01" placeholder="0.00"></span></label>
+          </div>
+          <div id="client-edit-weekly" class="hidden">
+            <label class="field"><span>Weekly amount ($ per week)</span>
+              <span class="in-pre"><em>$</em><input class="in" type="number" name="weekly_amount_dollars" min="0" step="0.01" placeholder="0.00"></span></label>
+            <p class="note">The amount for a full week. A week earns its share of that amount by its days, and only weeks with billable hours earn it.</p>
+          </div>
+          <div id="client-edit-retainer" class="hidden">
+            <label class="field"><span>Monthly retainer ($ per month)</span>
+              <span class="in-pre"><em>$</em><input class="in" type="number" name="monthly_amount_dollars" min="0" step="0.01" placeholder="0.00"></span></label>
+            <p class="note">Billed every month the contract is live. A retainer client with no amount earns nothing, so the amount has to be filled in before the model can be saved.</p>
+          </div>
+          <div id="client-edit-fixed" class="hidden">
+            <label class="field"><span>Fixed project amount</span>
+              <span class="in-pre"><em>$</em><input class="in" type="number" name="fixed_amount_dollars" min="0" step="0.01" placeholder="0.00"></span></label>
+            <label class="field"><span>Project start</span><input class="in" type="date" name="fixed_start" /></label>
+            <label class="field"><span>Project end</span><input class="in" type="date" name="fixed_end" /></label>
+            <p class="note" id="client-edit-fixed-note">The project's total, spread over the project's dates.</p>
+            
+            <div id="client-edit-milestones" class="milestone-box">
+              <div class="sec-h">
+                <h4 style="margin:0;font-size:14px;font-weight:650">Milestones</h4>
+                <span class="hint" style="color:var(--muted);font-size:12.5px">Each one counts once, in the week of its release date</span>
+              </div>
+              <p class="note" id="client-edit-milestone-mode">Loading the milestones...</p>
+              <table class="grid milestone-table">
+                <thead>
+                  <tr><th>MILESTONE</th><th>AMOUNT</th><th>RELEASE DATE</th><th>FUNDS</th><th>STATE</th><th>LANDED</th><th></th></tr>
+                </thead>
+                <tbody id="client-edit-milestone-rows"></tbody>
+              </table>
+              <p class="note" id="client-edit-milestone-total"></p>
+              <button type="button" id="client-edit-milestone-add">+ Add a milestone</button>
+              <p class="err" id="client-edit-milestone-err" role="alert"></p>
+            </div>
+          </div>
+          <div id="client-edit-profit" class="hidden">
+            <label class="field"><span>Commission</span>
+              <span class="in-pre"><em>%</em><input class="in" type="number" name="profit_pct" min="0" max="100" step="0.01" placeholder="0.00"></span></label>
+            <label class="field"><span>Percent of</span><input class="in" type="text" name="profit_base" placeholder="e.g. the profit after costs" /></label>
+          </div>
+          <p class="err" id="client-edit-billing-err" role="alert"></p>
+        </div>
+        <label>Contact Name <input type="text" name="contact_name" /></label>
+        <label>Contact Email <input type="email" name="contact_email" /></label>
+        <label>Currency
+          <select name="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+          </select>
+        </label>
+        <div class="proj-section">
+          <div class="color-board-label">Projects (they use this client's colour)</div>
+          <ul id="client-edit-existing-projects" class="proj-existing"></ul>
+          <div id="client-edit-new-projects" class="proj-rows"></div>
+        </div>
+        
+        <label>Status
+          <select name="status">
+            <option value="active">Active</option>
+            <option value="paused">Paused — no new hours, leaves the weekly goal, earns no retainer until unpaused</option>
+          </select>
+        </label>
+        <p class="note" id="client-edit-status-note"></p>
+        <div class="color-board-label">Colour (its projects use it too)</div>
+        <div id="client-edit-color-board" class="color-board-host"></div>
+        <div class="modal-actions">
+          <button type="submit">Save</button>
+          <button type="button" id="client-edit-cancel" class="link">Cancel</button>
+        </div>
+        <p id="client-edit-err" class="err"></p>
+      </form>
+    </div>
+  </div>
+
+  
+  <div id="pdf-report" class="pdf-report" aria-hidden="true"></div>
+
+  <script src="./timeparse.js"></script>
+  <script src="./report-math.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

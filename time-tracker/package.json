@@ -1,0 +1,20 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Team time tracker: timesheets, clients, team, staff reports, CSV and PDF export. Runs on Cloudflare Workers + D1, or locally in demo mode.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "demo": "node --experimental-sqlite demo/server.mjs",
+    "schema": "node --experimental-sqlite demo/export-schema.mjs",
+    "dev": "npx wrangler@4 dev",
+    "deploy": "npx wrangler@4 deploy",
+    "db:setup": "npx wrangler@4 d1 execute time-tracker-db --remote --file=./db/d1-setup.sql"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}

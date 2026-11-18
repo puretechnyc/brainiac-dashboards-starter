@@ -1,0 +1,3761 @@
+{
+ "generated_at": "2026-11-18 17:13 UTC",
+ "data_as_of_et": "2026-11-17",
+ "data_as_of_epoch": 1795022022,
+ "run_id": "build-2026-11-18T17:13:42Z",
+ "run_note": "Demo data: every number on this page is made up.",
+ "windows": {
+  "this_week": {
+   "start": "2026-11-11",
+   "end": "2026-11-17",
+   "days": 7
+  },
+  "last_week": {
+   "start": "2026-11-04",
+   "end": "2026-11-10",
+   "days": 7,
+   "exists": true
+  },
+  "all": {
+   "start": "2026-10-07",
+   "end": "2026-11-17",
+   "days": 42
+  },
+  "latest": "2026-11-17"
+ },
+ "clients": {
+  "Corner Cafe": {
+   "currency": "USD",
+   "accounts": [
+    {
+     "account_id": "100000000000001",
+     "platform": "meta",
+     "account_name": "Corner Cafe (Meta)",
+     "result_type": "purchase",
+     "tracks_revenue": true,
+     "currency": "USD"
+    }
+   ],
+   "goal": {
+    "kind": "ecom",
+    "cost_label": "Cost per online order",
+    "cost_target": 18,
+    "result_platform": "meta",
+    "multi_platform": false,
+    "count_noun": "Online orders",
+    "count_desc": null,
+    "extra_lines": [
+     "$18 max per online order (average order is about $32)"
+    ],
+    "this_week": {
+     "spend": 417.35,
+     "results": 27.0,
+     "measured": true,
+     "cpr": 15.457407407407409,
+     "revenue": 805.11
+    },
+    "today_so_far": null,
+    "last_week": {
+     "spend": 382.37,
+     "results": 21.0,
+     "measured": true,
+     "cpr": 18.20809523809524,
+     "revenue": 745.72
+    },
+    "all": {
+     "spend": 2028.1,
+     "results": 145.0,
+     "measured": true,
+     "cpr": 13.986896551724127,
+     "revenue": 4443.92
+    },
+    "avg_days": 42,
+    "data_start": "2026-10-07",
+    "data_end": "2026-11-17",
+    "account_targets": [],
+    "target_text": null,
+    "status_override": null,
+    "app_split": null,
+    "platform_split": null,
+    "volume": null,
+    "actions_both": null,
+    "overview": {
+     "a": {
+      "noun": "Online orders",
+      "tw": 27.0,
+      "lw": 21.0,
+      "cost_tw": 15.457407407407409,
+      "cost_lw": 18.20809523809524,
+      "cost_label": "cost per online order",
+      "note": ""
+     }
+    }
+   },
+   "platforms": {
+    "meta": {
+     "accounts": [
+      {
+       "account_name": "Corner Cafe (Meta)",
+       "account_id": "100000000000001",
+       "result_type": "purchase",
+       "campaigns": [
+        {
+         "name": "Cafe | Online orders | Local 5mi",
+         "spend": 241.01,
+         "impr": 21931.0,
+         "clicks": 277.0,
+         "results": 17.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Broad 18-65",
+           "spend": 241.01,
+           "impr": 21931.0,
+           "clicks": 277.0,
+           "results": 17.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900001",
+             "ad_name": "Latte art video",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 124.91,
+             "impr": 12225.0,
+             "clicks": 151.0,
+             "ctr": 0.012351738241308793,
+             "results": 8.0,
+             "measured": true,
+             "cpr": 15.61375,
+             "freq": 1.4,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900002",
+             "ad_name": "Breakfast combo carousel",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 68.95,
+             "impr": 5886.0,
+             "clicks": 75.0,
+             "ctr": 0.0127420998980632,
+             "results": 4.0,
+             "measured": true,
+             "cpr": 17.2375,
+             "freq": 1.7,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900003",
+             "ad_name": "Weekend brunch photo",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 47.15,
+             "impr": 3820.0,
+             "clicks": 51.0,
+             "ctr": 0.013350785340314137,
+             "results": 5.0,
+             "measured": true,
+             "cpr": 9.430000000000001,
+             "freq": 1.6,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.012630523003966988,
+           "cpr": 14.177058823529414,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.012630523003966988,
+         "cpr": 14.177058823529414,
+         "budget": {
+          "amount": 35.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Cafe | Test | Catering lunch boxes",
+         "spend": 95.46,
+         "impr": 8125.0,
+         "clicks": 97.0,
+         "results": 0.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Office workers",
+           "spend": 95.46,
+           "impr": 8125.0,
+           "clicks": 97.0,
+           "results": 0.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900006",
+             "ad_name": "Lunch box hero",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 55.31,
+             "impr": 4651.0,
+             "clicks": 59.0,
+             "ctr": 0.012685443990539669,
+             "results": 0.0,
+             "measured": true,
+             "cpr": null,
+             "freq": 1.4,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900007",
+             "ad_name": "Team lunch UGC",
+             "name_id": null,
+             "status": "PAUSED",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": true,
+             "other_goal": false,
+             "spend": 40.15,
+             "impr": 3474.0,
+             "clicks": 38.0,
+             "ctr": 0.010938399539435808,
+             "results": 0.0,
+             "measured": true,
+             "cpr": null,
+             "freq": 1.3,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.011938461538461538,
+           "cpr": null,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.011938461538461538,
+         "cpr": null,
+         "budget": {
+          "amount": 15.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Cafe | Retargeting | Site visitors 30d",
+         "spend": 80.88,
+         "impr": 6881.0,
+         "clicks": 77.0,
+         "results": 10.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Visitors 30d",
+           "spend": 80.88,
+           "impr": 6881.0,
+           "clicks": 77.0,
+           "results": 10.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900004",
+             "ad_name": "Come back offer",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 48.94,
+             "impr": 4077.0,
+             "clicks": 49.0,
+             "ctr": 0.012018641157714005,
+             "results": 6.0,
+             "measured": true,
+             "cpr": 8.156666666666665,
+             "freq": 1.4,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900005",
+             "ad_name": "Menu highlight",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 31.94,
+             "impr": 2804.0,
+             "clicks": 28.0,
+             "ctr": 0.009985734664764621,
+             "results": 4.0,
+             "measured": true,
+             "cpr": 7.984999999999999,
+             "freq": 1.5,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.011190233977619531,
+           "cpr": 8.088,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.011190233977619531,
+         "cpr": 8.088,
+         "budget": {
+          "amount": 12.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        }
+       ],
+       "acct_results_tw": 27.0,
+       "ad_results_tw": 27.0,
+       "attribution_gap": false,
+       "budget_read": true,
+       "budget_as_of": "2026-11-17"
+      }
+     ],
+     "is_meta": true
+    }
+   },
+   "creative": [
+    {
+     "ad_name": "Latte art video",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 124.91,
+     "ctr": 0.012351738241308793,
+     "results": 8.0,
+     "measured": true,
+     "cpr": 15.61375,
+     "freq": 1.4,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Breakfast combo carousel",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 68.95,
+     "ctr": 0.0127420998980632,
+     "results": 4.0,
+     "measured": true,
+     "cpr": 17.2375,
+     "freq": 1.7,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Lunch box hero",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 55.31,
+     "ctr": 0.012685443990539669,
+     "results": 0.0,
+     "measured": true,
+     "cpr": null,
+     "freq": 1.4,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Come back offer",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 48.94,
+     "ctr": 0.012018641157714005,
+     "results": 6.0,
+     "measured": true,
+     "cpr": 8.156666666666665,
+     "freq": 1.4,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Weekend brunch photo",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 47.15,
+     "ctr": 0.013350785340314137,
+     "results": 5.0,
+     "measured": true,
+     "cpr": 9.430000000000001,
+     "freq": 1.6,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Team lunch UGC",
+     "name_id": null,
+     "status": "PAUSED",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": true,
+     "spend": 40.15,
+     "ctr": 0.010938399539435808,
+     "results": 0.0,
+     "measured": true,
+     "cpr": null,
+     "freq": 1.3,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Menu highlight",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 31.94,
+     "ctr": 0.009985734664764621,
+     "results": 4.0,
+     "measured": true,
+     "cpr": 7.984999999999999,
+     "freq": 1.5,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    }
+   ],
+   "what_changed": {
+    "per_day": false,
+    "by_campaign": [
+     {
+      "name": "Cafe | Test | Catering lunch boxes",
+      "spend_tw": 95.46,
+      "spend_lw": 66.65,
+      "spend_tw_pd": 13.637142857142857,
+      "spend_lw_pd": 9.521428571428572,
+      "spend_delta": 28.81,
+      "cpr_tw": null,
+      "cpr_lw": 66.65,
+      "cpr_delta": null
+     },
+     {
+      "name": "Cafe | Online orders | Local 5mi",
+      "spend_tw": 241.01,
+      "spend_lw": 237.03,
+      "spend_tw_pd": 34.43000000000001,
+      "spend_lw_pd": 33.861428571428576,
+      "spend_delta": 3.98,
+      "cpr_tw": 14.177058823529414,
+      "cpr_lw": 15.802000000000001,
+      "cpr_delta": -1.6249411764705872
+     },
+     {
+      "name": "Cafe | Retargeting | Site visitors 30d",
+      "spend_tw": 80.88,
+      "spend_lw": 78.69,
+      "spend_tw_pd": 11.554285714285713,
+      "spend_lw_pd": 11.241428571428571,
+      "spend_delta": 2.19,
+      "cpr_tw": 8.088,
+      "cpr_lw": 15.738,
+      "cpr_delta": -7.65
+     }
+    ],
+    "by_ad": [
+     {
+      "name": "Lunch box hero",
+      "spend_tw": 55.31,
+      "spend_lw": 38.31,
+      "spend_tw_pd": 7.90142857142857,
+      "spend_lw_pd": 5.472857142857143,
+      "spend_delta": 17.0,
+      "cpr_tw": null,
+      "cpr_lw": 38.31,
+      "cpr_delta": null
+     },
+     {
+      "name": "Team lunch UGC",
+      "spend_tw": 40.15,
+      "spend_lw": 28.34,
+      "spend_tw_pd": 5.735714285714286,
+      "spend_lw_pd": 4.048571428571428,
+      "spend_delta": 11.81,
+      "cpr_tw": null,
+      "cpr_lw": null,
+      "cpr_delta": null
+     },
+     {
+      "name": "Latte art video",
+      "spend_tw": 124.91,
+      "spend_lw": 117.86,
+      "spend_tw_pd": 17.844285714285714,
+      "spend_lw_pd": 16.837142857142858,
+      "spend_delta": 7.05,
+      "cpr_tw": 15.61375,
+      "cpr_lw": 16.837142857142858,
+      "cpr_delta": -1.2233928571428585
+     },
+     {
+      "name": "Come back offer",
+      "spend_tw": 48.94,
+      "spend_lw": 47.27,
+      "spend_tw_pd": 6.99142857142857,
+      "spend_lw_pd": 6.752857142857143,
+      "spend_delta": 1.67,
+      "cpr_tw": 8.156666666666665,
+      "cpr_lw": 15.756666666666666,
+      "cpr_delta": -7.600000000000001
+     },
+     {
+      "name": "Breakfast combo carousel",
+      "spend_tw": 68.95,
+      "spend_lw": 70.6,
+      "spend_tw_pd": 9.85,
+      "spend_lw_pd": 10.085714285714285,
+      "spend_delta": -1.65,
+      "cpr_tw": 17.2375,
+      "cpr_lw": 17.65,
+      "cpr_delta": -0.41249999999999787
+     },
+     {
+      "name": "Weekend brunch photo",
+      "spend_tw": 47.15,
+      "spend_lw": 48.57,
+      "spend_tw_pd": 6.735714285714287,
+      "spend_lw_pd": 6.938571428571428,
+      "spend_delta": -1.42,
+      "cpr_tw": 9.430000000000001,
+      "cpr_lw": 12.142499999999998,
+      "cpr_delta": -2.712499999999997
+     },
+     {
+      "name": "Menu highlight",
+      "spend_tw": 31.94,
+      "spend_lw": 31.42,
+      "spend_tw_pd": 4.562857142857142,
+      "spend_lw_pd": 4.488571428571428,
+      "spend_delta": 0.52,
+      "cpr_tw": 7.984999999999999,
+      "cpr_lw": 15.709999999999999,
+      "cpr_delta": -7.725
+     }
+    ],
+    "enough_history": true,
+    "data_start": "2026-10-07"
+   },
+   "flags": [
+    {
+     "sev": "red",
+     "text": "Corner Cafe / Cafe | Test | Catering lunch boxes: $95.46 spent, 0 results in the last 7 days",
+     "action": "Pause or fix tracking on this campaign; confirm the conversion is firing."
+    }
+   ],
+   "daily": {
+    "100000000000001": [
+     {
+      "date": "2026-10-07",
+      "spend": 40.96,
+      "results": 3.0,
+      "impr": 3083.0,
+      "clicks": 38.0
+     },
+     {
+      "date": "2026-10-08",
+      "spend": 40.54,
+      "results": 2.0,
+      "impr": 3356.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-09",
+      "spend": 44.97,
+      "results": 4.0,
+      "impr": 3652.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-10-10",
+      "spend": 45.74,
+      "results": 4.0,
+      "impr": 3750.0,
+      "clicks": 55.0
+     },
+     {
+      "date": "2026-10-11",
+      "spend": 41.44,
+      "results": 4.0,
+      "impr": 3891.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-10-12",
+      "spend": 48.15,
+      "results": 4.0,
+      "impr": 4048.0,
+      "clicks": 58.0
+     },
+     {
+      "date": "2026-10-13",
+      "spend": 43.68,
+      "results": 2.0,
+      "impr": 3528.0,
+      "clicks": 45.0
+     },
+     {
+      "date": "2026-10-14",
+      "spend": 46.22,
+      "results": 4.0,
+      "impr": 4320.0,
+      "clicks": 64.0
+     },
+     {
+      "date": "2026-10-15",
+      "spend": 45.94,
+      "results": 1.0,
+      "impr": 3126.0,
+      "clicks": 41.0
+     },
+     {
+      "date": "2026-10-16",
+      "spend": 41.87,
+      "results": 5.0,
+      "impr": 3540.0,
+      "clicks": 51.0
+     },
+     {
+      "date": "2026-10-17",
+      "spend": 46.05,
+      "results": 5.0,
+      "impr": 3983.0,
+      "clicks": 45.0
+     },
+     {
+      "date": "2026-10-18",
+      "spend": 48.88,
+      "results": 5.0,
+      "impr": 4362.0,
+      "clicks": 47.0
+     },
+     {
+      "date": "2026-10-19",
+      "spend": 46.75,
+      "results": 2.0,
+      "impr": 3850.0,
+      "clicks": 59.0
+     },
+     {
+      "date": "2026-10-20",
+      "spend": 39.79,
+      "results": 4.0,
+      "impr": 3121.0,
+      "clicks": 30.0
+     },
+     {
+      "date": "2026-10-21",
+      "spend": 42.63,
+      "results": 3.0,
+      "impr": 3591.0,
+      "clicks": 34.0
+     },
+     {
+      "date": "2026-10-22",
+      "spend": 46.76,
+      "results": 3.0,
+      "impr": 4013.0,
+      "clicks": 56.0
+     },
+     {
+      "date": "2026-10-23",
+      "spend": 40.39,
+      "results": 2.0,
+      "impr": 3544.0,
+      "clicks": 35.0
+     },
+     {
+      "date": "2026-10-24",
+      "spend": 40.15,
+      "results": 2.0,
+      "impr": 3062.0,
+      "clicks": 37.0
+     },
+     {
+      "date": "2026-10-25",
+      "spend": 42.79,
+      "results": 4.0,
+      "impr": 3729.0,
+      "clicks": 54.0
+     },
+     {
+      "date": "2026-10-26",
+      "spend": 44.61,
+      "results": 5.0,
+      "impr": 4004.0,
+      "clicks": 61.0
+     },
+     {
+      "date": "2026-10-27",
+      "spend": 41.01,
+      "results": 2.0,
+      "impr": 3151.0,
+      "clicks": 31.0
+     },
+     {
+      "date": "2026-10-28",
+      "spend": 44.59,
+      "results": 5.0,
+      "impr": 3148.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-29",
+      "spend": 43.58,
+      "results": 3.0,
+      "impr": 3917.0,
+      "clicks": 52.0
+     },
+     {
+      "date": "2026-10-30",
+      "spend": 44.39,
+      "results": 4.0,
+      "impr": 3447.0,
+      "clicks": 54.0
+     },
+     {
+      "date": "2026-10-31",
+      "spend": 45.11,
+      "results": 4.0,
+      "impr": 3138.0,
+      "clicks": 37.0
+     },
+     {
+      "date": "2026-11-01",
+      "spend": 46.07,
+      "results": 4.0,
+      "impr": 4428.0,
+      "clicks": 62.0
+     },
+     {
+      "date": "2026-11-02",
+      "spend": 43.95,
+      "results": 5.0,
+      "impr": 4455.0,
+      "clicks": 62.0
+     },
+     {
+      "date": "2026-11-03",
+      "spend": 41.37,
+      "results": 2.0,
+      "impr": 3818.0,
+      "clicks": 49.0
+     },
+     {
+      "date": "2026-11-04",
+      "spend": 40.65,
+      "results": 4.0,
+      "impr": 3807.0,
+      "clicks": 55.0
+     },
+     {
+      "date": "2026-11-05",
+      "spend": 44.01,
+      "results": 3.0,
+      "impr": 3703.0,
+      "clicks": 43.0
+     },
+     {
+      "date": "2026-11-06",
+      "spend": 54.02,
+      "results": 4.0,
+      "impr": 4547.0,
+      "clicks": 73.0
+     },
+     {
+      "date": "2026-11-07",
+      "spend": 63.19,
+      "results": 1.0,
+      "impr": 5195.0,
+      "clicks": 64.0
+     },
+     {
+      "date": "2026-11-08",
+      "spend": 59.4,
+      "results": 4.0,
+      "impr": 5130.0,
+      "clicks": 64.0
+     },
+     {
+      "date": "2026-11-09",
+      "spend": 61.44,
+      "results": 2.0,
+      "impr": 5702.0,
+      "clicks": 86.0
+     },
+     {
+      "date": "2026-11-10",
+      "spend": 59.66,
+      "results": 3.0,
+      "impr": 5331.0,
+      "clicks": 71.0
+     },
+     {
+      "date": "2026-11-11",
+      "spend": 61.0,
+      "results": 4.0,
+      "impr": 5326.0,
+      "clicks": 70.0
+     },
+     {
+      "date": "2026-11-12",
+      "spend": 57.14,
+      "results": 3.0,
+      "impr": 5010.0,
+      "clicks": 53.0
+     },
+     {
+      "date": "2026-11-13",
+      "spend": 60.89,
+      "results": 5.0,
+      "impr": 5416.0,
+      "clicks": 67.0
+     },
+     {
+      "date": "2026-11-14",
+      "spend": 63.54,
+      "results": 3.0,
+      "impr": 5623.0,
+      "clicks": 59.0
+     },
+     {
+      "date": "2026-11-15",
+      "spend": 61.24,
+      "results": 6.0,
+      "impr": 5247.0,
+      "clicks": 65.0
+     },
+     {
+      "date": "2026-11-16",
+      "spend": 54.18,
+      "results": 4.0,
+      "impr": 4810.0,
+      "clicks": 64.0
+     },
+     {
+      "date": "2026-11-17",
+      "spend": 59.36,
+      "results": 2.0,
+      "impr": 5505.0,
+      "clicks": 73.0
+     }
+    ]
+   },
+   "has_backend": false,
+   "not_launched": false,
+   "breakdowns": [
+    {
+     "label": "Placement (Meta)",
+     "platform": "meta",
+     "dimension": "placement",
+     "rows": [
+      {
+       "value": "audience_network|classic",
+       "spend": 121.46,
+       "impr": 4854.0,
+       "clicks": 94.0,
+       "results": 7.9,
+       "measured": true
+      },
+      {
+       "value": "facebook|feed",
+       "spend": 118.25,
+       "impr": 4728.0,
+       "clicks": 92.0,
+       "results": 7.9,
+       "measured": true
+      },
+      {
+       "value": "instagram|feed",
+       "spend": 102.56,
+       "impr": 4100.0,
+       "clicks": 78.0,
+       "results": 6.300000000000001,
+       "measured": true
+      },
+      {
+       "value": "instagram|reels",
+       "spend": 75.06,
+       "impr": 2999.0,
+       "clicks": 57.0,
+       "results": 5.0,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Age Gender (Meta)",
+     "platform": "meta",
+     "dimension": "age_gender",
+     "rows": [
+      {
+       "value": "25-34|female",
+       "spend": 101.95,
+       "impr": 4076.0,
+       "clicks": 78.0,
+       "results": 6.800000000000001,
+       "measured": true
+      },
+      {
+       "value": "45-54|female",
+       "spend": 93.0,
+       "impr": 3716.0,
+       "clicks": 72.0,
+       "results": 5.7,
+       "measured": true
+      },
+      {
+       "value": "35-44|male",
+       "spend": 89.32,
+       "impr": 3569.0,
+       "clicks": 68.0,
+       "results": 5.7,
+       "measured": true
+      },
+      {
+       "value": "25-34|male",
+       "spend": 79.37,
+       "impr": 3171.0,
+       "clicks": 61.0,
+       "results": 5.1000000000000005,
+       "measured": true
+      },
+      {
+       "value": "35-44|female",
+       "spend": 53.73,
+       "impr": 2145.0,
+       "clicks": 41.0,
+       "results": 3.5999999999999996,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Impression Device (Meta)",
+     "platform": "meta",
+     "dimension": "impression_device",
+     "rows": [
+      {
+       "value": "iphone",
+       "spend": 144.06,
+       "impr": 5759.0,
+       "clicks": 111.0,
+       "results": 9.0,
+       "measured": true
+      },
+      {
+       "value": "desktop",
+       "spend": 139.19,
+       "impr": 5565.0,
+       "clicks": 107.0,
+       "results": 8.9,
+       "measured": true
+      },
+      {
+       "value": "android_smartphone",
+       "spend": 134.09,
+       "impr": 5360.0,
+       "clicks": 104.0,
+       "results": 9.1,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    }
+   ],
+   "search_terms": null,
+   "locations": null,
+   "budget_available": true
+  },
+  "Bright Dental": {
+   "currency": "USD",
+   "accounts": [
+    {
+     "account_id": "1234567890",
+     "platform": "google",
+     "account_name": "Bright Dental (Google)",
+     "result_type": "call",
+     "tracks_revenue": false,
+     "currency": "USD"
+    },
+    {
+     "account_id": "100000000000002",
+     "platform": "meta",
+     "account_name": "Bright Dental (Meta)",
+     "result_type": "lead",
+     "tracks_revenue": false,
+     "currency": "USD"
+    }
+   ],
+   "goal": {
+    "kind": "leads",
+    "cost_label": "Blended cost per lead",
+    "cost_target": null,
+    "result_platform": "combined",
+    "multi_platform": true,
+    "count_noun": "Leads (Google + Meta)",
+    "count_desc": null,
+    "extra_lines": [
+     "New-patient leads: calls and form fills"
+    ],
+    "this_week": {
+     "spend": 870.54,
+     "results": 23.0,
+     "measured": true,
+     "cpr": 37.84956521739131,
+     "revenue": null
+    },
+    "today_so_far": null,
+    "last_week": {
+     "spend": 868.64,
+     "results": 20.0,
+     "measured": true,
+     "cpr": 43.43199999999999,
+     "revenue": null
+    },
+    "all": {
+     "spend": 5293.26,
+     "results": 121.0,
+     "measured": true,
+     "cpr": 43.74595041322314,
+     "revenue": null
+    },
+    "avg_days": 42,
+    "data_start": "2026-10-07",
+    "data_end": "2026-11-17",
+    "account_targets": [
+     {
+      "account_name": "Bright Dental (Google)",
+      "platform": "google",
+      "label": "Google blended cost per lead",
+      "value": 70,
+      "cpr_tw": 48.803333333333335,
+      "results_tw": 12.0,
+      "measured": true
+     },
+     {
+      "account_name": "Bright Dental (Meta)",
+      "platform": "meta",
+      "label": "Meta blended cost per lead",
+      "value": 25,
+      "cpr_tw": 25.9,
+      "results_tw": 11.0,
+      "measured": true
+     }
+    ],
+    "target_text": "Per platform: Google $70/lead, Meta $25/lead",
+    "status_override": null,
+    "app_split": null,
+    "platform_split": {
+     "targets": {
+      "google": 70,
+      "meta": 25
+     },
+     "note": null,
+     "google": {
+      "tw": {
+       "spend": 585.64,
+       "results": 12.0,
+       "measured": true,
+       "cpr": 48.803333333333335,
+       "revenue": null
+      },
+      "lw": {
+       "spend": 593.06,
+       "results": 9.0,
+       "measured": true,
+       "cpr": 65.89555555555553,
+       "revenue": null
+      },
+      "all": {
+       "spend": 3610.26,
+       "results": 56.0,
+       "measured": true,
+       "cpr": 64.46892857142855,
+       "revenue": null
+      }
+     },
+     "meta": {
+      "tw": {
+       "spend": 284.9,
+       "results": 11.0,
+       "measured": true,
+       "cpr": 25.9,
+       "revenue": null
+      },
+      "lw": {
+       "spend": 275.58,
+       "results": 11.0,
+       "measured": true,
+       "cpr": 25.052727272727278,
+       "revenue": null
+      },
+      "all": {
+       "spend": 1683.0,
+       "results": 65.0,
+       "measured": true,
+       "cpr": 25.892307692307675,
+       "revenue": null
+      }
+     }
+    },
+    "volume": {
+     "noun": "leads (google + meta)",
+     "mtd": 51.0,
+     "monthly": 60,
+     "stretch": 75,
+     "pace": 90,
+     "elapsed": 17,
+     "days_in_month": 30,
+     "month": "November",
+     "as_of": "2026-11-17",
+     "note": "60+ new-patient leads a month",
+     "measured": true
+    },
+    "actions_both": null,
+    "overview": {
+     "a": {
+      "noun": "Leads (Google + Meta)",
+      "tw": 23.0,
+      "lw": 20.0,
+      "cost_tw": 37.84956521739131,
+      "cost_lw": 43.43199999999999,
+      "cost_label": "blended cost per lead",
+      "note": ""
+     }
+    }
+   },
+   "platforms": {
+    "google": {
+     "accounts": [
+      {
+       "account_name": "Bright Dental (Google)",
+       "account_id": "1234567890",
+       "result_type": "call",
+       "campaigns": [
+        {
+         "name": "Search | Emergency dentist",
+         "spend": 266.18,
+         "impr": 3572.0,
+         "clicks": 277.0,
+         "results": 5.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Emergency terms",
+           "spend": 266.18,
+           "impr": 3572.0,
+           "clicks": 277.0,
+           "results": 5.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900008",
+             "ad_name": "Emergency RSA 1",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 150.84,
+             "impr": 2329.0,
+             "clicks": 193.0,
+             "ctr": 0.08286818376985831,
+             "results": 2.0,
+             "measured": true,
+             "cpr": 75.42,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900009",
+             "ad_name": "Emergency RSA 2",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 115.34,
+             "impr": 1243.0,
+             "clicks": 84.0,
+             "ctr": 0.06757843925985518,
+             "results": 3.0,
+             "measured": true,
+             "cpr": 38.446666666666665,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.07754759238521837,
+           "cpr": 53.236000000000004,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.07754759238521837,
+         "cpr": 53.236000000000004,
+         "budget": {
+          "amount": 40.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Performance Max | New patients",
+         "spend": 191.95,
+         "impr": 3022.0,
+         "clicks": 203.0,
+         "results": 5.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Asset group 1",
+           "spend": 191.95,
+           "impr": 3022.0,
+           "clicks": 203.0,
+           "results": 5.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900011",
+             "ad_name": "PMax assets",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 191.95,
+             "impr": 3022.0,
+             "clicks": 203.0,
+             "ctr": 0.0671740569159497,
+             "results": 5.0,
+             "measured": true,
+             "cpr": 38.39,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.0671740569159497,
+           "cpr": 38.39,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.0671740569159497,
+         "cpr": 38.39,
+         "budget": {
+          "amount": 30.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Search | Teeth whitening",
+         "spend": 127.51,
+         "impr": 1896.0,
+         "clicks": 156.0,
+         "results": 2.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Whitening terms",
+           "spend": 127.51,
+           "impr": 1896.0,
+           "clicks": 156.0,
+           "results": 2.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900010",
+             "ad_name": "Whitening RSA",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 127.51,
+             "impr": 1896.0,
+             "clicks": 156.0,
+             "ctr": 0.08227848101265822,
+             "results": 2.0,
+             "measured": true,
+             "cpr": 63.755,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.08227848101265822,
+           "cpr": 63.755,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.08227848101265822,
+         "cpr": 63.755,
+         "budget": {
+          "amount": 20.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        }
+       ],
+       "acct_results_tw": 12.0,
+       "ad_results_tw": 12.0,
+       "attribution_gap": false,
+       "budget_read": true,
+       "budget_as_of": "2026-11-17"
+      }
+     ],
+     "is_meta": false
+    },
+    "meta": {
+     "accounts": [
+      {
+       "account_name": "Bright Dental (Meta)",
+       "account_id": "100000000000002",
+       "result_type": "lead",
+       "campaigns": [
+        {
+         "name": "Leads | New patient offer | Form",
+         "spend": 164.33,
+         "impr": 14052.0,
+         "clicks": 168.0,
+         "results": 8.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Parents 28-55",
+           "spend": 164.33,
+           "impr": 14052.0,
+           "clicks": 168.0,
+           "results": 8.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900012",
+             "ad_name": "Free exam video",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 99.74,
+             "impr": 8399.0,
+             "clicks": 101.0,
+             "ctr": 0.012025241100130969,
+             "results": 6.0,
+             "measured": true,
+             "cpr": 16.623333333333335,
+             "freq": 1.7,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900013",
+             "ad_name": "Smile gallery carousel",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 64.59,
+             "impr": 5653.0,
+             "clicks": 67.0,
+             "ctr": 0.011852113921811427,
+             "results": 2.0,
+             "measured": true,
+             "cpr": 32.295,
+             "freq": 1.5,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.011955593509820665,
+           "cpr": 20.54125,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.011955593509820665,
+         "cpr": 20.54125,
+         "budget": {
+          "amount": 25.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Leads | Invisalign | Form",
+         "spend": 120.57,
+         "impr": 9867.0,
+         "clicks": 145.0,
+         "results": 3.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Adults 25-45",
+           "spend": 120.57,
+           "impr": 9867.0,
+           "clicks": 145.0,
+           "results": 3.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900014",
+             "ad_name": "Invisalign before/after",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 71.56,
+             "impr": 5976.0,
+             "clicks": 94.0,
+             "ctr": 0.01572958500669344,
+             "results": 3.0,
+             "measured": true,
+             "cpr": 23.853333333333335,
+             "freq": 1.6,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900015",
+             "ad_name": "Doctor intro video",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 49.01,
+             "impr": 3891.0,
+             "clicks": 51.0,
+             "ctr": 0.013107170393215111,
+             "results": 0.0,
+             "measured": true,
+             "cpr": null,
+             "freq": 1.7,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.014695449478058174,
+           "cpr": 40.190000000000005,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.014695449478058174,
+         "cpr": 40.190000000000005,
+         "budget": {
+          "amount": 18.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        }
+       ],
+       "acct_results_tw": 11.0,
+       "ad_results_tw": 11.0,
+       "attribution_gap": false,
+       "budget_read": true,
+       "budget_as_of": "2026-11-17"
+      }
+     ],
+     "is_meta": true
+    }
+   },
+   "creative": [
+    {
+     "ad_name": "Free exam video",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 99.74,
+     "ctr": 0.012025241100130969,
+     "results": 6.0,
+     "measured": true,
+     "cpr": 16.623333333333335,
+     "freq": 1.7,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Invisalign before/after",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 71.56,
+     "ctr": 0.01572958500669344,
+     "results": 3.0,
+     "measured": true,
+     "cpr": 23.853333333333335,
+     "freq": 1.6,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Smile gallery carousel",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 64.59,
+     "ctr": 0.011852113921811427,
+     "results": 2.0,
+     "measured": true,
+     "cpr": 32.295,
+     "freq": 1.5,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    },
+    {
+     "ad_name": "Doctor intro video",
+     "name_id": null,
+     "status": "ACTIVE",
+     "status_date": "2026-11-17",
+     "status_stale": false,
+     "other_goal": false,
+     "paused_in_window": false,
+     "spend": 49.01,
+     "ctr": 0.013107170393215111,
+     "results": 0.0,
+     "measured": true,
+     "cpr": null,
+     "freq": 1.7,
+     "hook": "unparsed",
+     "angle": "unparsed",
+     "format": "unparsed",
+     "thumb": null
+    }
+   ],
+   "what_changed": {
+    "per_day": false,
+    "by_campaign": [
+     {
+      "name": "Search | Teeth whitening",
+      "spend_tw": 127.51,
+      "spend_lw": 146.76,
+      "spend_tw_pd": 18.215714285714288,
+      "spend_lw_pd": 20.965714285714284,
+      "spend_delta": -19.25,
+      "cpr_tw": 63.755,
+      "cpr_lw": 73.38,
+      "cpr_delta": -9.624999999999993
+     },
+     {
+      "name": "Search | Emergency dentist",
+      "spend_tw": 266.18,
+      "spend_lw": 256.39,
+      "spend_tw_pd": 38.02571428571429,
+      "spend_lw_pd": 36.62714285714285,
+      "spend_delta": 9.79,
+      "cpr_tw": 53.236000000000004,
+      "cpr_lw": 64.09749999999998,
+      "cpr_delta": -10.861499999999978
+     },
+     {
+      "name": "Leads | New patient offer | Form",
+      "spend_tw": 164.33,
+      "spend_lw": 157.84,
+      "spend_tw_pd": 23.475714285714286,
+      "spend_lw_pd": 22.548571428571428,
+      "spend_delta": 6.49,
+      "cpr_tw": 20.54125,
+      "cpr_lw": 22.548571428571428,
+      "cpr_delta": -2.0073214285714265
+     },
+     {
+      "name": "Leads | Invisalign | Form",
+      "spend_tw": 120.57,
+      "spend_lw": 117.74,
+      "spend_tw_pd": 17.224285714285717,
+      "spend_lw_pd": 16.82,
+      "spend_delta": 2.83,
+      "cpr_tw": 40.190000000000005,
+      "cpr_lw": 29.435000000000002,
+      "cpr_delta": 10.755000000000003
+     },
+     {
+      "name": "Performance Max | New patients",
+      "spend_tw": 191.95,
+      "spend_lw": 189.91,
+      "spend_tw_pd": 27.421428571428574,
+      "spend_lw_pd": 27.13,
+      "spend_delta": 2.04,
+      "cpr_tw": 38.39,
+      "cpr_lw": 63.303333333333335,
+      "cpr_delta": -24.913333333333334
+     }
+    ],
+    "by_ad": [
+     {
+      "name": "Whitening RSA",
+      "spend_tw": 127.51,
+      "spend_lw": 146.76,
+      "spend_tw_pd": 18.215714285714288,
+      "spend_lw_pd": 20.965714285714284,
+      "spend_delta": -19.25,
+      "cpr_tw": 63.755,
+      "cpr_lw": 73.38,
+      "cpr_delta": -9.624999999999993
+     },
+     {
+      "name": "Emergency RSA 2",
+      "spend_tw": 115.34,
+      "spend_lw": 102.37,
+      "spend_tw_pd": 16.47714285714286,
+      "spend_lw_pd": 14.624285714285715,
+      "spend_delta": 12.97,
+      "cpr_tw": 38.446666666666665,
+      "cpr_lw": 34.123333333333335,
+      "cpr_delta": 4.323333333333331
+     },
+     {
+      "name": "Free exam video",
+      "spend_tw": 99.74,
+      "spend_lw": 91.11,
+      "spend_tw_pd": 14.248571428571429,
+      "spend_lw_pd": 13.015714285714285,
+      "spend_delta": 8.63,
+      "cpr_tw": 16.623333333333335,
+      "cpr_lw": 30.37,
+      "cpr_delta": -13.746666666666666
+     },
+     {
+      "name": "Emergency RSA 1",
+      "spend_tw": 150.84,
+      "spend_lw": 154.02,
+      "spend_tw_pd": 21.548571428571428,
+      "spend_lw_pd": 22.002857142857142,
+      "spend_delta": -3.18,
+      "cpr_tw": 75.42,
+      "cpr_lw": 154.01999999999998,
+      "cpr_delta": -78.59999999999998
+     },
+     {
+      "name": "Doctor intro video",
+      "spend_tw": 49.01,
+      "spend_lw": 45.84,
+      "spend_tw_pd": 7.001428571428572,
+      "spend_lw_pd": 6.548571428571428,
+      "spend_delta": 3.17,
+      "cpr_tw": null,
+      "cpr_lw": 45.839999999999996,
+      "cpr_delta": null
+     },
+     {
+      "name": "Smile gallery carousel",
+      "spend_tw": 64.59,
+      "spend_lw": 66.73,
+      "spend_tw_pd": 9.227142857142857,
+      "spend_lw_pd": 9.532857142857141,
+      "spend_delta": -2.14,
+      "cpr_tw": 32.295,
+      "cpr_lw": 16.682499999999997,
+      "cpr_delta": 15.612500000000004
+     },
+     {
+      "name": "PMax assets",
+      "spend_tw": 191.95,
+      "spend_lw": 189.91,
+      "spend_tw_pd": 27.421428571428574,
+      "spend_lw_pd": 27.13,
+      "spend_delta": 2.04,
+      "cpr_tw": 38.39,
+      "cpr_lw": 63.303333333333335,
+      "cpr_delta": -24.913333333333334
+     },
+     {
+      "name": "Invisalign before/after",
+      "spend_tw": 71.56,
+      "spend_lw": 71.9,
+      "spend_tw_pd": 10.222857142857142,
+      "spend_lw_pd": 10.271428571428572,
+      "spend_delta": -0.34,
+      "cpr_tw": 23.853333333333335,
+      "cpr_lw": 23.96666666666667,
+      "cpr_delta": -0.11333333333333329
+     }
+    ],
+    "enough_history": true,
+    "data_start": "2026-10-07"
+   },
+   "flags": [],
+   "daily": {
+    "1234567890": [
+     {
+      "date": "2026-10-07",
+      "spend": 86.75,
+      "results": 2.0,
+      "impr": 1527.0,
+      "clicks": 89.0
+     },
+     {
+      "date": "2026-10-08",
+      "spend": 84.8,
+      "results": 1.0,
+      "impr": 1357.0,
+      "clicks": 121.0
+     },
+     {
+      "date": "2026-10-09",
+      "spend": 84.32,
+      "results": 1.0,
+      "impr": 1160.0,
+      "clicks": 105.0
+     },
+     {
+      "date": "2026-10-10",
+      "spend": 86.01,
+      "results": 2.0,
+      "impr": 1154.0,
+      "clicks": 103.0
+     },
+     {
+      "date": "2026-10-11",
+      "spend": 88.85,
+      "results": 2.0,
+      "impr": 1086.0,
+      "clicks": 82.0
+     },
+     {
+      "date": "2026-10-12",
+      "spend": 81.4,
+      "results": 1.0,
+      "impr": 1258.0,
+      "clicks": 97.0
+     },
+     {
+      "date": "2026-10-13",
+      "spend": 81.48,
+      "results": 0.0,
+      "impr": 1129.0,
+      "clicks": 85.0
+     },
+     {
+      "date": "2026-10-14",
+      "spend": 82.42,
+      "results": 1.0,
+      "impr": 1392.0,
+      "clicks": 113.0
+     },
+     {
+      "date": "2026-10-15",
+      "spend": 89.18,
+      "results": 2.0,
+      "impr": 1141.0,
+      "clicks": 103.0
+     },
+     {
+      "date": "2026-10-16",
+      "spend": 94.75,
+      "results": 1.0,
+      "impr": 1009.0,
+      "clicks": 66.0
+     },
+     {
+      "date": "2026-10-17",
+      "spend": 83.77,
+      "results": 2.0,
+      "impr": 1171.0,
+      "clicks": 82.0
+     },
+     {
+      "date": "2026-10-18",
+      "spend": 90.61,
+      "results": 0.0,
+      "impr": 1245.0,
+      "clicks": 79.0
+     },
+     {
+      "date": "2026-10-19",
+      "spend": 82.55,
+      "results": 3.0,
+      "impr": 1285.0,
+      "clicks": 85.0
+     },
+     {
+      "date": "2026-10-20",
+      "spend": 90.18,
+      "results": 0.0,
+      "impr": 1467.0,
+      "clicks": 117.0
+     },
+     {
+      "date": "2026-10-21",
+      "spend": 83.46,
+      "results": 1.0,
+      "impr": 1299.0,
+      "clicks": 96.0
+     },
+     {
+      "date": "2026-10-22",
+      "spend": 87.5,
+      "results": 2.0,
+      "impr": 1047.0,
+      "clicks": 67.0
+     },
+     {
+      "date": "2026-10-23",
+      "spend": 92.87,
+      "results": 2.0,
+      "impr": 1097.0,
+      "clicks": 100.0
+     },
+     {
+      "date": "2026-10-24",
+      "spend": 97.45,
+      "results": 2.0,
+      "impr": 1267.0,
+      "clicks": 107.0
+     },
+     {
+      "date": "2026-10-25",
+      "spend": 91.22,
+      "results": 0.0,
+      "impr": 1318.0,
+      "clicks": 81.0
+     },
+     {
+      "date": "2026-10-26",
+      "spend": 80.41,
+      "results": 2.0,
+      "impr": 1258.0,
+      "clicks": 90.0
+     },
+     {
+      "date": "2026-10-27",
+      "spend": 87.41,
+      "results": 2.0,
+      "impr": 1189.0,
+      "clicks": 96.0
+     },
+     {
+      "date": "2026-10-28",
+      "spend": 94.45,
+      "results": 0.0,
+      "impr": 1255.0,
+      "clicks": 83.0
+     },
+     {
+      "date": "2026-10-29",
+      "spend": 92.56,
+      "results": 3.0,
+      "impr": 1231.0,
+      "clicks": 93.0
+     },
+     {
+      "date": "2026-10-30",
+      "spend": 84.69,
+      "results": 0.0,
+      "impr": 1009.0,
+      "clicks": 87.0
+     },
+     {
+      "date": "2026-10-31",
+      "spend": 77.63,
+      "results": 0.0,
+      "impr": 886.0,
+      "clicks": 67.0
+     },
+     {
+      "date": "2026-11-01",
+      "spend": 85.36,
+      "results": 0.0,
+      "impr": 1080.0,
+      "clicks": 88.0
+     },
+     {
+      "date": "2026-11-02",
+      "spend": 85.41,
+      "results": 3.0,
+      "impr": 1090.0,
+      "clicks": 84.0
+     },
+     {
+      "date": "2026-11-03",
+      "spend": 84.07,
+      "results": 0.0,
+      "impr": 1075.0,
+      "clicks": 66.0
+     },
+     {
+      "date": "2026-11-04",
+      "spend": 76.74,
+      "results": 1.0,
+      "impr": 966.0,
+      "clicks": 68.0
+     },
+     {
+      "date": "2026-11-05",
+      "spend": 87.15,
+      "results": 2.0,
+      "impr": 1132.0,
+      "clicks": 68.0
+     },
+     {
+      "date": "2026-11-06",
+      "spend": 82.2,
+      "results": 3.0,
+      "impr": 1171.0,
+      "clicks": 83.0
+     },
+     {
+      "date": "2026-11-07",
+      "spend": 84.41,
+      "results": 2.0,
+      "impr": 1461.0,
+      "clicks": 107.0
+     },
+     {
+      "date": "2026-11-08",
+      "spend": 82.94,
+      "results": 0.0,
+      "impr": 1379.0,
+      "clicks": 97.0
+     },
+     {
+      "date": "2026-11-09",
+      "spend": 88.53,
+      "results": 1.0,
+      "impr": 1286.0,
+      "clicks": 103.0
+     },
+     {
+      "date": "2026-11-10",
+      "spend": 91.09,
+      "results": 0.0,
+      "impr": 1365.0,
+      "clicks": 111.0
+     },
+     {
+      "date": "2026-11-11",
+      "spend": 79.37,
+      "results": 3.0,
+      "impr": 1158.0,
+      "clicks": 80.0
+     },
+     {
+      "date": "2026-11-12",
+      "spend": 87.31,
+      "results": 2.0,
+      "impr": 1178.0,
+      "clicks": 86.0
+     },
+     {
+      "date": "2026-11-13",
+      "spend": 89.43,
+      "results": 1.0,
+      "impr": 1217.0,
+      "clicks": 89.0
+     },
+     {
+      "date": "2026-11-14",
+      "spend": 80.5,
+      "results": 0.0,
+      "impr": 1178.0,
+      "clicks": 86.0
+     },
+     {
+      "date": "2026-11-15",
+      "spend": 81.6,
+      "results": 1.0,
+      "impr": 1114.0,
+      "clicks": 80.0
+     },
+     {
+      "date": "2026-11-16",
+      "spend": 81.87,
+      "results": 3.0,
+      "impr": 1253.0,
+      "clicks": 84.0
+     },
+     {
+      "date": "2026-11-17",
+      "spend": 85.56,
+      "results": 2.0,
+      "impr": 1392.0,
+      "clicks": 131.0
+     }
+    ],
+    "100000000000002": [
+     {
+      "date": "2026-10-07",
+      "spend": 35.94,
+      "results": 3.0,
+      "impr": 3058.0,
+      "clicks": 41.0
+     },
+     {
+      "date": "2026-10-08",
+      "spend": 41.78,
+      "results": 3.0,
+      "impr": 3546.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-10-09",
+      "spend": 42.25,
+      "results": 1.0,
+      "impr": 3135.0,
+      "clicks": 46.0
+     },
+     {
+      "date": "2026-10-10",
+      "spend": 39.89,
+      "results": 0.0,
+      "impr": 3731.0,
+      "clicks": 51.0
+     },
+     {
+      "date": "2026-10-11",
+      "spend": 43.19,
+      "results": 1.0,
+      "impr": 3356.0,
+      "clicks": 44.0
+     },
+     {
+      "date": "2026-10-12",
+      "spend": 37.3,
+      "results": 3.0,
+      "impr": 3363.0,
+      "clicks": 36.0
+     },
+     {
+      "date": "2026-10-13",
+      "spend": 41.46,
+      "results": 1.0,
+      "impr": 3649.0,
+      "clicks": 59.0
+     },
+     {
+      "date": "2026-10-14",
+      "spend": 42.61,
+      "results": 1.0,
+      "impr": 3605.0,
+      "clicks": 54.0
+     },
+     {
+      "date": "2026-10-15",
+      "spend": 39.38,
+      "results": 1.0,
+      "impr": 3486.0,
+      "clicks": 50.0
+     },
+     {
+      "date": "2026-10-16",
+      "spend": 42.29,
+      "results": 2.0,
+      "impr": 3448.0,
+      "clicks": 50.0
+     },
+     {
+      "date": "2026-10-17",
+      "spend": 44.15,
+      "results": 2.0,
+      "impr": 3930.0,
+      "clicks": 53.0
+     },
+     {
+      "date": "2026-10-18",
+      "spend": 39.95,
+      "results": 1.0,
+      "impr": 3396.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-19",
+      "spend": 34.74,
+      "results": 1.0,
+      "impr": 2786.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-20",
+      "spend": 40.4,
+      "results": 3.0,
+      "impr": 3279.0,
+      "clicks": 47.0
+     },
+     {
+      "date": "2026-10-21",
+      "spend": 36.47,
+      "results": 1.0,
+      "impr": 3058.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-10-22",
+      "spend": 37.67,
+      "results": 1.0,
+      "impr": 3495.0,
+      "clicks": 35.0
+     },
+     {
+      "date": "2026-10-23",
+      "spend": 36.52,
+      "results": 1.0,
+      "impr": 3369.0,
+      "clicks": 38.0
+     },
+     {
+      "date": "2026-10-24",
+      "spend": 41.12,
+      "results": 1.0,
+      "impr": 3095.0,
+      "clicks": 40.0
+     },
+     {
+      "date": "2026-10-25",
+      "spend": 39.46,
+      "results": 1.0,
+      "impr": 2894.0,
+      "clicks": 43.0
+     },
+     {
+      "date": "2026-10-26",
+      "spend": 42.12,
+      "results": 1.0,
+      "impr": 3543.0,
+      "clicks": 46.0
+     },
+     {
+      "date": "2026-10-27",
+      "spend": 40.44,
+      "results": 2.0,
+      "impr": 3779.0,
+      "clicks": 53.0
+     },
+     {
+      "date": "2026-10-28",
+      "spend": 39.65,
+      "results": 2.0,
+      "impr": 3643.0,
+      "clicks": 52.0
+     },
+     {
+      "date": "2026-10-29",
+      "spend": 38.96,
+      "results": 1.0,
+      "impr": 3477.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-30",
+      "spend": 39.84,
+      "results": 2.0,
+      "impr": 3207.0,
+      "clicks": 41.0
+     },
+     {
+      "date": "2026-10-31",
+      "spend": 40.2,
+      "results": 2.0,
+      "impr": 3504.0,
+      "clicks": 55.0
+     },
+     {
+      "date": "2026-11-01",
+      "spend": 41.71,
+      "results": 1.0,
+      "impr": 4185.0,
+      "clicks": 74.0
+     },
+     {
+      "date": "2026-11-02",
+      "spend": 41.46,
+      "results": 3.0,
+      "impr": 3646.0,
+      "clicks": 46.0
+     },
+     {
+      "date": "2026-11-03",
+      "spend": 41.57,
+      "results": 1.0,
+      "impr": 3206.0,
+      "clicks": 49.0
+     },
+     {
+      "date": "2026-11-04",
+      "spend": 39.86,
+      "results": 2.0,
+      "impr": 3374.0,
+      "clicks": 52.0
+     },
+     {
+      "date": "2026-11-05",
+      "spend": 39.92,
+      "results": 3.0,
+      "impr": 3153.0,
+      "clicks": 49.0
+     },
+     {
+      "date": "2026-11-06",
+      "spend": 39.15,
+      "results": 1.0,
+      "impr": 3019.0,
+      "clicks": 34.0
+     },
+     {
+      "date": "2026-11-07",
+      "spend": 37.83,
+      "results": 0.0,
+      "impr": 3233.0,
+      "clicks": 41.0
+     },
+     {
+      "date": "2026-11-08",
+      "spend": 38.01,
+      "results": 3.0,
+      "impr": 2991.0,
+      "clicks": 36.0
+     },
+     {
+      "date": "2026-11-09",
+      "spend": 37.37,
+      "results": 1.0,
+      "impr": 3498.0,
+      "clicks": 49.0
+     },
+     {
+      "date": "2026-11-10",
+      "spend": 43.44,
+      "results": 1.0,
+      "impr": 3461.0,
+      "clicks": 52.0
+     },
+     {
+      "date": "2026-11-11",
+      "spend": 42.34,
+      "results": 0.0,
+      "impr": 3142.0,
+      "clicks": 43.0
+     },
+     {
+      "date": "2026-11-12",
+      "spend": 41.88,
+      "results": 2.0,
+      "impr": 3209.0,
+      "clicks": 36.0
+     },
+     {
+      "date": "2026-11-13",
+      "spend": 40.2,
+      "results": 3.0,
+      "impr": 3729.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-11-14",
+      "spend": 38.39,
+      "results": 1.0,
+      "impr": 3621.0,
+      "clicks": 57.0
+     },
+     {
+      "date": "2026-11-15",
+      "spend": 40.92,
+      "results": 2.0,
+      "impr": 3206.0,
+      "clicks": 39.0
+     },
+     {
+      "date": "2026-11-16",
+      "spend": 44.13,
+      "results": 2.0,
+      "impr": 3784.0,
+      "clicks": 46.0
+     },
+     {
+      "date": "2026-11-17",
+      "spend": 37.04,
+      "results": 1.0,
+      "impr": 3228.0,
+      "clicks": 44.0
+     }
+    ]
+   },
+   "has_backend": false,
+   "not_launched": false,
+   "breakdowns": [
+    {
+     "label": "Device (Google)",
+     "platform": "google",
+     "dimension": "device",
+     "rows": [
+      {
+       "value": "MOBILE",
+       "spend": 201.93,
+       "impr": 8073.0,
+       "clicks": 159.0,
+       "results": 4.2,
+       "measured": true
+      },
+      {
+       "value": "DESKTOP",
+       "spend": 192.04,
+       "impr": 7678.0,
+       "clicks": 150.0,
+       "results": 4.3,
+       "measured": true
+      },
+      {
+       "value": "TABLET",
+       "spend": 191.68,
+       "impr": 7664.0,
+       "clicks": 150.0,
+       "results": 3.5,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Network Type (Google)",
+     "platform": "google",
+     "dimension": "network_type",
+     "rows": [
+      {
+       "value": "SEARCH_PARTNERS",
+       "spend": 235.78,
+       "impr": 9428.0,
+       "clicks": 185.0,
+       "results": 5.2,
+       "measured": true
+      },
+      {
+       "value": "SEARCH",
+       "spend": 176.18,
+       "impr": 7044.0,
+       "clicks": 138.0,
+       "results": 3.5,
+       "measured": true
+      },
+      {
+       "value": "CONTENT",
+       "spend": 173.66,
+       "impr": 6944.0,
+       "clicks": 135.0,
+       "results": 3.4,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Placement (Meta)",
+     "platform": "meta",
+     "dimension": "placement",
+     "rows": [
+      {
+       "value": "audience_network|classic",
+       "spend": 76.67,
+       "impr": 3063.0,
+       "clicks": 57.0,
+       "results": 3.1,
+       "measured": true
+      },
+      {
+       "value": "facebook|feed",
+       "spend": 72.71,
+       "impr": 2903.0,
+       "clicks": 55.0,
+       "results": 2.9,
+       "measured": true
+      },
+      {
+       "value": "instagram|reels",
+       "spend": 68.88,
+       "impr": 2751.0,
+       "clicks": 52.0,
+       "results": 2.6,
+       "measured": true
+      },
+      {
+       "value": "instagram|feed",
+       "spend": 66.64,
+       "impr": 2664.0,
+       "clicks": 50.0,
+       "results": 2.1,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Age Gender (Meta)",
+     "platform": "meta",
+     "dimension": "age_gender",
+     "rows": [
+      {
+       "value": "45-54|female",
+       "spend": 72.69,
+       "impr": 2903.0,
+       "clicks": 56.0,
+       "results": 2.7,
+       "measured": true
+      },
+      {
+       "value": "35-44|female",
+       "spend": 63.65,
+       "impr": 2543.0,
+       "clicks": 48.0,
+       "results": 2.4,
+       "measured": true
+      },
+      {
+       "value": "25-34|female",
+       "spend": 52.04,
+       "impr": 2077.0,
+       "clicks": 39.0,
+       "results": 2.1,
+       "measured": true
+      },
+      {
+       "value": "25-34|male",
+       "spend": 49.21,
+       "impr": 1965.0,
+       "clicks": 36.0,
+       "results": 2.3000000000000003,
+       "measured": true
+      },
+      {
+       "value": "35-44|male",
+       "spend": 47.34,
+       "impr": 1891.0,
+       "clicks": 34.0,
+       "results": 1.5,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Impression Device (Meta)",
+     "platform": "meta",
+     "dimension": "impression_device",
+     "rows": [
+      {
+       "value": "android_smartphone",
+       "spend": 117.99,
+       "impr": 4716.0,
+       "clicks": 92.0,
+       "results": 4.2,
+       "measured": true
+      },
+      {
+       "value": "iphone",
+       "spend": 84.57,
+       "impr": 3381.0,
+       "clicks": 65.0,
+       "results": 3.6000000000000005,
+       "measured": true
+      },
+      {
+       "value": "desktop",
+       "spend": 82.33,
+       "impr": 3290.0,
+       "clicks": 62.0,
+       "results": 3.1999999999999997,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    }
+   ],
+   "search_terms": {
+    "rows": [
+     {
+      "term": "emergency dentist near me",
+      "cost": 412.5,
+      "clicks": 61.0,
+      "conv": 8.0
+     },
+     {
+      "term": "teeth whitening cost",
+      "cost": 288.1,
+      "clicks": 40.0,
+      "conv": 2.0
+     },
+     {
+      "term": "dentist open saturday",
+      "cost": 154.2,
+      "clicks": 22.0,
+      "conv": 3.0
+     },
+     {
+      "term": "free dental exam",
+      "cost": 98.4,
+      "clicks": 19.0,
+      "conv": 0.0
+     }
+    ],
+    "covered": 953.2,
+    "google_spend": 585.64,
+    "window": "2026-10-07 to 2026-11-17"
+   },
+   "locations": null,
+   "budget_available": true
+  },
+  "Green Thumb Landscaping": {
+   "currency": "USD",
+   "accounts": [
+    {
+     "account_id": "2345678901",
+     "platform": "google",
+     "account_name": "Green Thumb Landscaping (Google)",
+     "result_type": "lead",
+     "tracks_revenue": false,
+     "currency": "USD"
+    }
+   ],
+   "goal": {
+    "kind": "leads",
+    "cost_label": "Cost per quote request",
+    "cost_target": 45,
+    "result_platform": "google",
+    "multi_platform": false,
+    "count_noun": "Quote requests",
+    "count_desc": null,
+    "extra_lines": [
+     "$45 max per quote request in the service area"
+    ],
+    "this_week": {
+     "spend": 356.53,
+     "results": 7.0,
+     "measured": true,
+     "cpr": 50.93285714285714,
+     "revenue": null
+    },
+    "today_so_far": null,
+    "last_week": {
+     "spend": 387.8,
+     "results": 11.0,
+     "measured": true,
+     "cpr": 35.25454545454545,
+     "revenue": null
+    },
+    "all": {
+     "spend": 2215.01,
+     "results": 58.0,
+     "measured": true,
+     "cpr": 38.1898275862069,
+     "revenue": null
+    },
+    "avg_days": 42,
+    "data_start": "2026-10-07",
+    "data_end": "2026-11-17",
+    "account_targets": [],
+    "target_text": null,
+    "status_override": null,
+    "app_split": null,
+    "platform_split": null,
+    "volume": null,
+    "actions_both": null,
+    "overview": {
+     "a": {
+      "noun": "Quote requests",
+      "tw": 7.0,
+      "lw": 11.0,
+      "cost_tw": 50.93285714285714,
+      "cost_lw": 35.25454545454545,
+      "cost_label": "cost per quote request",
+      "note": ""
+     }
+    }
+   },
+   "platforms": {
+    "google": {
+     "accounts": [
+      {
+       "account_name": "Green Thumb Landscaping (Google)",
+       "account_id": "2345678901",
+       "result_type": "lead",
+       "campaigns": [
+        {
+         "name": "Search | Lawn care",
+         "spend": 200.2,
+         "impr": 2392.0,
+         "clicks": 185.0,
+         "results": 5.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Lawn care terms",
+           "spend": 200.2,
+           "impr": 2392.0,
+           "clicks": 185.0,
+           "results": 5.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900016",
+             "ad_name": "Lawn RSA 1",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 118.27,
+             "impr": 1376.0,
+             "clicks": 113.0,
+             "ctr": 0.08212209302325581,
+             "results": 2.0,
+             "measured": true,
+             "cpr": 59.135,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            },
+            {
+             "ad_id": "900017",
+             "ad_name": "Lawn RSA 2",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 81.93,
+             "impr": 1016.0,
+             "clicks": 72.0,
+             "ctr": 0.07086614173228346,
+             "results": 3.0,
+             "measured": true,
+             "cpr": 27.310000000000002,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.07734113712374582,
+           "cpr": 40.04,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.07734113712374582,
+         "cpr": 40.04,
+         "budget": {
+          "amount": 30.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        },
+        {
+         "name": "Search | Landscape design",
+         "spend": 156.33,
+         "impr": 2028.0,
+         "clicks": 172.0,
+         "results": 2.0,
+         "results_measured": true,
+         "other_goal": false,
+         "freq": null,
+         "adsets": [
+          {
+           "name": "Design terms",
+           "spend": 156.33,
+           "impr": 2028.0,
+           "clicks": 172.0,
+           "results": 2.0,
+           "results_measured": true,
+           "other_goal": false,
+           "freq": null,
+           "ads": [
+            {
+             "ad_id": "900018",
+             "ad_name": "Design RSA",
+             "name_id": null,
+             "status": "ACTIVE",
+             "status_date": "2026-11-17",
+             "status_stale": false,
+             "paused_in_window": false,
+             "other_goal": false,
+             "spend": 156.33,
+             "impr": 2028.0,
+             "clicks": 172.0,
+             "ctr": 0.08481262327416174,
+             "results": 2.0,
+             "measured": true,
+             "cpr": 78.165,
+             "freq": null,
+             "hook": "unparsed",
+             "angle": "unparsed",
+             "format": "unparsed"
+            }
+           ],
+           "ctr": 0.08481262327416174,
+           "cpr": 78.165,
+           "budget": null,
+           "state": null
+          }
+         ],
+         "ctr": 0.08481262327416174,
+         "cpr": 78.165,
+         "budget": {
+          "amount": 25.0,
+          "kind": "daily",
+          "currency": "USD",
+          "paused": false,
+          "shared": false
+         },
+         "budget_level": "campaign",
+         "state": null
+        }
+       ],
+       "acct_results_tw": 7.0,
+       "ad_results_tw": 7.0,
+       "attribution_gap": false,
+       "budget_read": true,
+       "budget_as_of": "2026-11-17"
+      }
+     ],
+     "is_meta": false
+    }
+   },
+   "creative": [],
+   "what_changed": {
+    "per_day": false,
+    "by_campaign": [
+     {
+      "name": "Search | Landscape design",
+      "spend_tw": 156.33,
+      "spend_lw": 173.4,
+      "spend_tw_pd": 22.332857142857144,
+      "spend_lw_pd": 24.771428571428572,
+      "spend_delta": -17.07,
+      "cpr_tw": 78.165,
+      "cpr_lw": 57.800000000000004,
+      "cpr_delta": 20.365000000000002
+     },
+     {
+      "name": "Search | Lawn care",
+      "spend_tw": 200.2,
+      "spend_lw": 214.4,
+      "spend_tw_pd": 28.599999999999998,
+      "spend_lw_pd": 30.62857142857143,
+      "spend_delta": -14.2,
+      "cpr_tw": 40.04,
+      "cpr_lw": 26.8,
+      "cpr_delta": 13.239999999999998
+     }
+    ],
+    "by_ad": [
+     {
+      "name": "Design RSA",
+      "spend_tw": 156.33,
+      "spend_lw": 173.4,
+      "spend_tw_pd": 22.332857142857144,
+      "spend_lw_pd": 24.771428571428572,
+      "spend_delta": -17.07,
+      "cpr_tw": 78.165,
+      "cpr_lw": 57.800000000000004,
+      "cpr_delta": 20.365000000000002
+     },
+     {
+      "name": "Lawn RSA 1",
+      "spend_tw": 118.27,
+      "spend_lw": 129.01,
+      "spend_tw_pd": 16.895714285714284,
+      "spend_lw_pd": 18.43,
+      "spend_delta": -10.74,
+      "cpr_tw": 59.135,
+      "cpr_lw": 21.501666666666665,
+      "cpr_delta": 37.63333333333333
+     },
+     {
+      "name": "Lawn RSA 2",
+      "spend_tw": 81.93,
+      "spend_lw": 85.39,
+      "spend_tw_pd": 11.704285714285716,
+      "spend_lw_pd": 12.198571428571428,
+      "spend_delta": -3.46,
+      "cpr_tw": 27.310000000000002,
+      "cpr_lw": 42.695,
+      "cpr_delta": -15.384999999999998
+     }
+    ],
+    "enough_history": true,
+    "data_start": "2026-10-07"
+   },
+   "flags": [],
+   "daily": {
+    "2345678901": [
+     {
+      "date": "2026-10-07",
+      "spend": 48.04,
+      "results": 3.0,
+      "impr": 747.0,
+      "clicks": 57.0
+     },
+     {
+      "date": "2026-10-08",
+      "spend": 44.89,
+      "results": 1.0,
+      "impr": 588.0,
+      "clicks": 50.0
+     },
+     {
+      "date": "2026-10-09",
+      "spend": 51.95,
+      "results": 3.0,
+      "impr": 774.0,
+      "clicks": 73.0
+     },
+     {
+      "date": "2026-10-10",
+      "spend": 54.58,
+      "results": 0.0,
+      "impr": 956.0,
+      "clicks": 59.0
+     },
+     {
+      "date": "2026-10-11",
+      "spend": 48.78,
+      "results": 1.0,
+      "impr": 756.0,
+      "clicks": 58.0
+     },
+     {
+      "date": "2026-10-12",
+      "spend": 54.65,
+      "results": 2.0,
+      "impr": 801.0,
+      "clicks": 54.0
+     },
+     {
+      "date": "2026-10-13",
+      "spend": 46.56,
+      "results": 1.0,
+      "impr": 726.0,
+      "clicks": 60.0
+     },
+     {
+      "date": "2026-10-14",
+      "spend": 51.92,
+      "results": 3.0,
+      "impr": 871.0,
+      "clicks": 69.0
+     },
+     {
+      "date": "2026-10-15",
+      "spend": 55.24,
+      "results": 1.0,
+      "impr": 856.0,
+      "clicks": 69.0
+     },
+     {
+      "date": "2026-10-16",
+      "spend": 55.9,
+      "results": 3.0,
+      "impr": 606.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-10-17",
+      "spend": 52.54,
+      "results": 2.0,
+      "impr": 777.0,
+      "clicks": 58.0
+     },
+     {
+      "date": "2026-10-18",
+      "spend": 57.23,
+      "results": 0.0,
+      "impr": 690.0,
+      "clicks": 56.0
+     },
+     {
+      "date": "2026-10-19",
+      "spend": 50.24,
+      "results": 1.0,
+      "impr": 784.0,
+      "clicks": 51.0
+     },
+     {
+      "date": "2026-10-20",
+      "spend": 45.89,
+      "results": 1.0,
+      "impr": 685.0,
+      "clicks": 54.0
+     },
+     {
+      "date": "2026-10-21",
+      "spend": 60.32,
+      "results": 2.0,
+      "impr": 820.0,
+      "clicks": 53.0
+     },
+     {
+      "date": "2026-10-22",
+      "spend": 49.82,
+      "results": 1.0,
+      "impr": 528.0,
+      "clicks": 37.0
+     },
+     {
+      "date": "2026-10-23",
+      "spend": 53.07,
+      "results": 2.0,
+      "impr": 880.0,
+      "clicks": 82.0
+     },
+     {
+      "date": "2026-10-24",
+      "spend": 49.33,
+      "results": 0.0,
+      "impr": 914.0,
+      "clicks": 69.0
+     },
+     {
+      "date": "2026-10-25",
+      "spend": 50.34,
+      "results": 2.0,
+      "impr": 664.0,
+      "clicks": 47.0
+     },
+     {
+      "date": "2026-10-26",
+      "spend": 50.36,
+      "results": 2.0,
+      "impr": 699.0,
+      "clicks": 42.0
+     },
+     {
+      "date": "2026-10-27",
+      "spend": 54.25,
+      "results": 2.0,
+      "impr": 754.0,
+      "clicks": 69.0
+     },
+     {
+      "date": "2026-10-28",
+      "spend": 60.2,
+      "results": 2.0,
+      "impr": 829.0,
+      "clicks": 65.0
+     },
+     {
+      "date": "2026-10-29",
+      "spend": 59.42,
+      "results": 2.0,
+      "impr": 899.0,
+      "clicks": 66.0
+     },
+     {
+      "date": "2026-10-30",
+      "spend": 53.42,
+      "results": 2.0,
+      "impr": 676.0,
+      "clicks": 51.0
+     },
+     {
+      "date": "2026-10-31",
+      "spend": 56.22,
+      "results": 0.0,
+      "impr": 619.0,
+      "clicks": 46.0
+     },
+     {
+      "date": "2026-11-01",
+      "spend": 53.47,
+      "results": 0.0,
+      "impr": 774.0,
+      "clicks": 70.0
+     },
+     {
+      "date": "2026-11-02",
+      "spend": 56.14,
+      "results": 1.0,
+      "impr": 1009.0,
+      "clicks": 87.0
+     },
+     {
+      "date": "2026-11-03",
+      "spend": 45.91,
+      "results": 0.0,
+      "impr": 621.0,
+      "clicks": 43.0
+     },
+     {
+      "date": "2026-11-04",
+      "spend": 58.65,
+      "results": 1.0,
+      "impr": 1036.0,
+      "clicks": 58.0
+     },
+     {
+      "date": "2026-11-05",
+      "spend": 45.25,
+      "results": 2.0,
+      "impr": 522.0,
+      "clicks": 44.0
+     },
+     {
+      "date": "2026-11-06",
+      "spend": 51.79,
+      "results": 2.0,
+      "impr": 840.0,
+      "clicks": 78.0
+     },
+     {
+      "date": "2026-11-07",
+      "spend": 56.62,
+      "results": 1.0,
+      "impr": 612.0,
+      "clicks": 36.0
+     },
+     {
+      "date": "2026-11-08",
+      "spend": 57.14,
+      "results": 1.0,
+      "impr": 946.0,
+      "clicks": 75.0
+     },
+     {
+      "date": "2026-11-09",
+      "spend": 58.97,
+      "results": 1.0,
+      "impr": 528.0,
+      "clicks": 43.0
+     },
+     {
+      "date": "2026-11-10",
+      "spend": 59.38,
+      "results": 3.0,
+      "impr": 873.0,
+      "clicks": 68.0
+     },
+     {
+      "date": "2026-11-11",
+      "spend": 54.96,
+      "results": 1.0,
+      "impr": 778.0,
+      "clicks": 61.0
+     },
+     {
+      "date": "2026-11-12",
+      "spend": 45.9,
+      "results": 0.0,
+      "impr": 561.0,
+      "clicks": 45.0
+     },
+     {
+      "date": "2026-11-13",
+      "spend": 47.49,
+      "results": 2.0,
+      "impr": 577.0,
+      "clicks": 55.0
+     },
+     {
+      "date": "2026-11-14",
+      "spend": 47.83,
+      "results": 1.0,
+      "impr": 556.0,
+      "clicks": 39.0
+     },
+     {
+      "date": "2026-11-15",
+      "spend": 52.64,
+      "results": 0.0,
+      "impr": 615.0,
+      "clicks": 40.0
+     },
+     {
+      "date": "2026-11-16",
+      "spend": 58.45,
+      "results": 1.0,
+      "impr": 627.0,
+      "clicks": 48.0
+     },
+     {
+      "date": "2026-11-17",
+      "spend": 49.26,
+      "results": 2.0,
+      "impr": 706.0,
+      "clicks": 69.0
+     }
+    ]
+   },
+   "has_backend": false,
+   "not_launched": false,
+   "breakdowns": [
+    {
+     "label": "Device (Google)",
+     "platform": "google",
+     "dimension": "device",
+     "rows": [
+      {
+       "value": "MOBILE",
+       "spend": 125.24,
+       "impr": 5006.0,
+       "clicks": 97.0,
+       "results": 2.9,
+       "measured": true
+      },
+      {
+       "value": "DESKTOP",
+       "spend": 119.55,
+       "impr": 4779.0,
+       "clicks": 92.0,
+       "results": 2.3,
+       "measured": true
+      },
+      {
+       "value": "TABLET",
+       "spend": 111.74,
+       "impr": 4467.0,
+       "clicks": 86.0,
+       "results": 1.8,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    },
+    {
+     "label": "Network Type (Google)",
+     "platform": "google",
+     "dimension": "network_type",
+     "rows": [
+      {
+       "value": "CONTENT",
+       "spend": 122.19,
+       "impr": 4885.0,
+       "clicks": 94.0,
+       "results": 2.6999999999999997,
+       "measured": true
+      },
+      {
+       "value": "SEARCH_PARTNERS",
+       "spend": 119.05,
+       "impr": 4758.0,
+       "clicks": 93.0,
+       "results": 2.3999999999999995,
+       "measured": true
+      },
+      {
+       "value": "SEARCH",
+       "spend": 115.28,
+       "impr": 4607.0,
+       "clicks": 88.0,
+       "results": 1.9000000000000001,
+       "measured": true
+      }
+     ],
+     "any_measured": true,
+     "coverage_note": null,
+     "results_caveat": false
+    }
+   ],
+   "search_terms": {
+    "rows": [
+     {
+      "term": "lawn care service",
+      "cost": 366.0,
+      "clicks": 58.0,
+      "conv": 9.0
+     },
+     {
+      "term": "landscape designer",
+      "cost": 251.7,
+      "clicks": 31.0,
+      "conv": 3.0
+     },
+     {
+      "term": "weekly lawn mowing",
+      "cost": 120.9,
+      "clicks": 20.0,
+      "conv": 4.0
+     },
+     {
+      "term": "how to mow a lawn",
+      "cost": 61.2,
+      "clicks": 14.0,
+      "conv": 0.0
+     }
+    ],
+    "covered": 799.8,
+    "google_spend": 356.53,
+    "window": "2026-10-07 to 2026-11-17"
+   },
+   "locations": null,
+   "budget_available": true
+  }
+ },
+ "client_order": [
+  "Corner Cafe",
+  "Bright Dental",
+  "Green Thumb Landscaping"
+ ],
+ "not_launched_clients": [],
+ "disapprovals_available": false,
+ "notes": {
+  "budget": "Budgets are the daily budgets in your ad accounts on the latest day.",
+  "backend": "Platform numbers only. Compare with your own sales or CRM records.",
+  "conversions_dark": "A conversion that stops firing while spend continues is flagged red.",
+  "breakdowns": "Breakdowns cover the last 7 days.",
+  "thumbnails": "Creative thumbnails come from the ad platform.",
+  "last_week_partial": "Week-over-week compares the last 7 days with the 7 days before."
+ },
+ "plans": {
+  "Corner Cafe": {
+   "status_at_plan": "on_track",
+   "mode": "scale",
+   "owner": "Sam (ads)",
+   "goal": "Online orders at $18 or less each, 60+ a month.",
+   "diagnosis": "The local campaign is profitable. The catering test spent without orders in its last week.",
+   "today": "Review 2026-11-17: orders steady; catering test has had 0 orders for 7 days.",
+   "tracking": "ONLINE. Purchase event fires on the order confirmation page.",
+   "leak": "Catering test: spend with no orders.",
+   "updated_on": "2026-11-17",
+   "last_reviewed": "2026-11-17",
+   "reviewed_at": "2026-11-17",
+   "next_review": "2026-11-20",
+   "note_asof": "as of 17 Nov",
+   "triggers": [
+    {
+     "rule": "Cost per order above $25 for 3 days",
+     "action": "Cut the weakest ad set budget by 20%"
+    }
+   ],
+   "tests": [
+    {
+     "name": "Catering lunch boxes for offices",
+     "status": "running",
+     "owner": "Sam",
+     "hypothesis": "Office managers will order catering from a lunch-box ad.",
+     "metric": "Catering orders",
+     "budget": "$15 a day",
+     "started": "2026-11-06",
+     "read_on": "2026-11-20",
+     "result": "Early orders, then none for 7 days.",
+     "decision_rule": "No order by the read date: stop the test."
+    }
+   ],
+   "closed_tests": [],
+   "next_actions": [
+    {
+     "action": "Pause the catering test if no order by the read date",
+     "owner": "Sam",
+     "due": "2026-11-20",
+     "metric": "Catering orders",
+     "read_on": "2026-11-20",
+     "within_limits": "Yes",
+     "stop_if": "0 orders"
+    },
+    {
+     "action": "Add two new brunch photos to the local campaign",
+     "owner": "Jo (design)",
+     "due": "2026-11-20",
+     "metric": "CTR",
+     "read_on": "2026-11-20",
+     "within_limits": "Yes",
+     "stop_if": "CTR below 1%"
+    }
+   ],
+   "open_decisions": [
+    "Raise the local budget from $35 to $45 a day?"
+   ],
+   "client_asks": [
+    "Send 5 new photos of the weekend menu."
+   ],
+   "cannot_measure": [
+    "Walk-in visits from ads."
+   ],
+   "summary": {
+    "asof": "2026-11-17",
+    "today": "On track overall; the catering test is the leak.",
+    "goal": "$18 per online order.",
+    "diagnosis": "Local campaign profitable; test is not.",
+    "tracking": "Online.",
+    "leak": "Catering test.",
+    "tests": "1 test running, read on 2026-11-20"
+   }
+  },
+  "Bright Dental": {
+   "status_at_plan": "watch",
+   "mode": "steady",
+   "owner": "Sam (ads)",
+   "goal": "60+ new-patient leads a month; Google under $70 a lead, Meta under $25.",
+   "diagnosis": "Meta form leads are cheap and steady. Google whitening costs rose this week.",
+   "today": "Review 2026-11-17: whitening cost per lead up; moving $5/day from whitening to emergency.",
+   "tracking": "ONLINE. Google call conversions and Meta lead forms both firing.",
+   "leak": "Teeth whitening search campaign.",
+   "updated_on": "2026-11-17",
+   "last_reviewed": "2026-11-17",
+   "reviewed_at": "2026-11-17",
+   "next_review": "2026-11-20",
+   "note_asof": "as of 17 Nov",
+   "triggers": [
+    {
+     "rule": "Google cost per lead over $90 for a week",
+     "action": "Pause the costliest campaign"
+    }
+   ],
+   "tests": [],
+   "closed_tests": [],
+   "next_actions": [
+    {
+     "action": "Add 'free exam' as a negative keyword",
+     "owner": "Sam",
+     "due": "2026-11-20",
+     "metric": "Wasted spend",
+     "read_on": "2026-11-20",
+     "within_limits": "Yes",
+     "stop_if": ""
+    }
+   ],
+   "open_decisions": [],
+   "client_asks": [
+    "Confirm which leads booked an appointment."
+   ],
+   "cannot_measure": [
+    "Which leads became patients (no CRM link yet)."
+   ],
+   "summary": {
+    "asof": "2026-11-17",
+    "today": "Watch: whitening cost per lead rising.",
+    "goal": "60+ leads a month.",
+    "diagnosis": "Meta cheap, Google mixed.",
+    "tracking": "Online.",
+    "leak": "Whitening search.",
+    "tests": "No test running."
+   }
+  },
+  "Green Thumb Landscaping": {
+   "status_at_plan": "on_track",
+   "mode": "steady",
+   "owner": "Alex (ads)",
+   "goal": "Quote requests at $45 or less.",
+   "diagnosis": "Lawn care converts well; design is pricier but bigger jobs.",
+   "today": "Review 2026-11-17: steady. Adding negatives for DIY searches.",
+   "tracking": "ONLINE. Quote form fires on the thank-you page.",
+   "leak": "DIY searches ('how to ...').",
+   "updated_on": "2026-11-17",
+   "last_reviewed": "2026-11-17",
+   "reviewed_at": "2026-11-17",
+   "next_review": "2026-11-20",
+   "note_asof": "as of 17 Nov",
+   "triggers": [],
+   "tests": [],
+   "closed_tests": [],
+   "next_actions": [
+    {
+     "action": "Add 'how to' as a negative phrase",
+     "owner": "Alex",
+     "due": "2026-11-20",
+     "metric": "Wasted spend",
+     "read_on": "2026-11-20",
+     "within_limits": "Yes",
+     "stop_if": ""
+    }
+   ],
+   "open_decisions": [],
+   "client_asks": [],
+   "cannot_measure": [],
+   "summary": {
+    "asof": "2026-11-17",
+    "today": "On track.",
+    "goal": "$45 per quote request.",
+    "diagnosis": "Lawn care strong.",
+    "tracking": "Online.",
+    "leak": "DIY searches.",
+    "tests": "No test running."
+   }
+  }
+ },
+ "pipelines": {},
+ "learnings": {
+  "Corner Cafe": [
+   {
+    "date": "2026-11-07",
+    "learning": "Short latte-art videos get twice the click rate of menu photos.",
+    "evidence": "Meta-reported CTR, 14 days, similar spend.",
+    "applied": "Video moved to the top ad set.",
+    "status": "confirmed",
+    "source": "Weekly review"
+   }
+  ],
+  "Bright Dental": [
+   {
+    "date": "2026-11-12",
+    "learning": "Emergency searches convert best on weekends.",
+    "evidence": "Google-reported calls by day of week, 6 weeks.",
+    "applied": "Weekend bid increase of 15%.",
+    "status": "provisional",
+    "source": "Weekly review"
+   }
+  ]
+ },
+ "conversion": {
+  "meta": {
+   "generated_at": "2026-11-18T17:13:42Z",
+   "window": {
+    "since": "2026-11-11",
+    "until": "2026-11-17",
+    "days": 7,
+    "tz": "America/New_York"
+   },
+   "scope": "4 accounts",
+   "thresholds": {
+    "OFFLINE_MIN_SILENT_SPEND": 100.0
+   },
+   "status_note": "Status is the tracking signal, not performance.",
+   "read_errors_global": []
+  },
+  "clients": {
+   "Corner Cafe": {
+    "rollup": "ONLINE",
+    "red_flag": false,
+    "accounts": [
+     {
+      "platform": "meta",
+      "account_id": "100000000000001",
+      "account_name": "Corner Cafe (Meta)",
+      "spend_7d": 417.35,
+      "spend_30d": 1493.66,
+      "clicks_7d": 451,
+      "conversions_7d": 27.0,
+      "campaigns": [],
+      "dashboard_conversion_event": "meta primary: Purchase"
+     }
+    ],
+    "conversions": [
+     {
+      "name": "Purchase",
+      "what_counts": "The result this account is optimised for",
+      "platform": "meta",
+      "account_id": "100000000000001",
+      "mechanism": "Meta pixel / Conversions API",
+      "event": "Purchase",
+      "used_for_bidding": true,
+      "counted_in_conversions": true,
+      "last_seen": "2026-11-17",
+      "spend_7d": 417.35,
+      "spend_basis": "whole account",
+      "conversions_7d": 27.0,
+      "all_conversions_7d": 27.0,
+      "action_status": "ENABLED",
+      "bidding_campaigns": [],
+      "status": "ONLINE",
+      "evidence": "27 events in the last 7 days",
+      "silence": null
+     }
+    ],
+    "secondary_actions": [],
+    "read_errors": []
+   },
+   "Bright Dental": {
+    "rollup": "ONLINE",
+    "red_flag": false,
+    "accounts": [
+     {
+      "platform": "google",
+      "account_id": "1234567890",
+      "account_name": "Bright Dental (Google)",
+      "spend_7d": 585.64,
+      "spend_30d": 2575.92,
+      "clicks_7d": 636,
+      "conversions_7d": 12.0,
+      "campaigns": [],
+      "dashboard_conversion_event": "google primary: Calls from ads"
+     },
+     {
+      "platform": "meta",
+      "account_id": "100000000000002",
+      "account_name": "Bright Dental (Meta)",
+      "spend_7d": 284.9,
+      "spend_30d": 1192.81,
+      "clicks_7d": 313,
+      "conversions_7d": 11.0,
+      "campaigns": [],
+      "dashboard_conversion_event": "meta primary: Lead form"
+     }
+    ],
+    "conversions": [
+     {
+      "name": "Calls from ads",
+      "what_counts": "The result this account is optimised for",
+      "platform": "google",
+      "account_id": "1234567890",
+      "mechanism": "Google Ads conversion action",
+      "event": "Calls from ads",
+      "used_for_bidding": true,
+      "counted_in_conversions": true,
+      "last_seen": "2026-11-17",
+      "spend_7d": 585.64,
+      "spend_basis": "whole account",
+      "conversions_7d": 12.0,
+      "all_conversions_7d": 12.0,
+      "action_status": "ENABLED",
+      "bidding_campaigns": [],
+      "status": "ONLINE",
+      "evidence": "12 events in the last 7 days",
+      "silence": null
+     },
+     {
+      "name": "Lead form",
+      "what_counts": "The result this account is optimised for",
+      "platform": "meta",
+      "account_id": "100000000000002",
+      "mechanism": "Meta pixel / Conversions API",
+      "event": "Lead form",
+      "used_for_bidding": true,
+      "counted_in_conversions": true,
+      "last_seen": "2026-11-17",
+      "spend_7d": 284.9,
+      "spend_basis": "whole account",
+      "conversions_7d": 11.0,
+      "all_conversions_7d": 11.0,
+      "action_status": "ENABLED",
+      "bidding_campaigns": [],
+      "status": "ONLINE",
+      "evidence": "11 events in the last 7 days",
+      "silence": null
+     }
+    ],
+    "secondary_actions": [],
+    "read_errors": []
+   },
+   "Green Thumb Landscaping": {
+    "rollup": "ONLINE",
+    "red_flag": false,
+    "accounts": [
+     {
+      "platform": "google",
+      "account_id": "2345678901",
+      "account_name": "Green Thumb Landscaping (Google)",
+      "spend_7d": 356.53,
+      "spend_30d": 1592.73,
+      "clicks_7d": 357,
+      "conversions_7d": 7.0,
+      "campaigns": [],
+      "dashboard_conversion_event": "google primary: Quote form submit"
+     }
+    ],
+    "conversions": [
+     {
+      "name": "Quote form submit",
+      "what_counts": "The result this account is optimised for",
+      "platform": "google",
+      "account_id": "2345678901",
+      "mechanism": "Google Ads conversion action",
+      "event": "Quote form submit",
+      "used_for_bidding": true,
+      "counted_in_conversions": true,
+      "last_seen": "2026-11-17",
+      "spend_7d": 356.53,
+      "spend_basis": "whole account",
+      "conversions_7d": 7.0,
+      "all_conversions_7d": 7.0,
+      "action_status": "ENABLED",
+      "bidding_campaigns": [],
+      "status": "ONLINE",
+      "evidence": "7 events in the last 7 days",
+      "silence": null
+     }
+    ],
+    "secondary_actions": [],
+    "read_errors": []
+   }
+  }
+ },
+ "lead_quality": {}
+}

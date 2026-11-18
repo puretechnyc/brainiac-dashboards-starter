@@ -1,0 +1,22 @@
+{
+  "Corner Cafe": [
+    {
+      "date": "2026-11-07",
+      "learning": "Short latte-art videos get twice the click rate of menu photos.",
+      "evidence": "Meta-reported CTR, 14 days, similar spend.",
+      "applied": "Video moved to the top ad set.",
+      "status": "confirmed",
+      "source": "Weekly review"
+    }
+  ],
+  "Bright Dental": [
+    {
+      "date": "2026-11-12",
+      "learning": "Emergency searches convert best on weekends.",
+      "evidence": "Google-reported calls by day of week, 6 weeks.",
+      "applied": "Weekend bid increase of 15%.",
+      "status": "provisional",
+      "source": "Weekly review"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# Settings for the time tracker. Copy this file to `.dev.vars` for local `wrangler dev`,
+# and set each one in production with:  npx wrangler secret put NAME
+# NOTHING here is needed for `npm run demo`.
+
+# One-time secret that lets you create the FIRST admin account (then you can delete it).
+BOOTSTRAP_SECRET=change-me-to-a-long-random-string
+
+# Public address of your app, used in emails, e.g. https://time.example.com
+APP_BASE_URL=https://time.example.com
+
+# Optional: email invoices / reports through Brevo
+BREVO_API_KEY=
+EMAIL_FROM=no-reply@example.com
+EMAIL_FROM_NAME=Time Tracker
+
+# Optional: "Sign in with Google" (all four are needed, or the button stays hidden)
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_STATE_SECRET=
+GOOGLE_WORKSPACE_DOMAIN=example.com
+GOOGLE_REDIRECT_URI=https://time.example.com/api/auth/google/callback
+
+# Optional: PayPal invoicing
+PAYPAL_CLIENT_ID=
+PAYPAL_SECRET=
+PAYPAL_SANDBOX=true
+PAYPAL_INVOICER_EMAIL=billing@example.com
+
+# Optional: read-only feed for another dashboard, and the goals writer
+INTEGRATION_TOKEN=
+GOALS_WRITE_TOKEN=

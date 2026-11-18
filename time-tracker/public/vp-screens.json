@@ -1,0 +1,7 @@
+{
+  "screens": [
+    "vp-weekly.js",
+    "vp-team-weekly.js",
+    "vp-lock-settings.js"
+  ]
+}

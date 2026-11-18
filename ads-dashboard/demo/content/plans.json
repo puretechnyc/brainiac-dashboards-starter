@@ -1,0 +1,167 @@
+{
+  "Corner Cafe": {
+    "status_at_plan": "on_track",
+    "mode": "scale",
+    "owner": "Sam (ads)",
+    "goal": "Online orders at $18 or less each, 60+ a month.",
+    "diagnosis": "The local campaign is profitable. The catering test spent without orders in its last week.",
+    "today": "Review 2026-11-17: orders steady; catering test has had 0 orders for 7 days.",
+    "tracking": "ONLINE. Purchase event fires on the order confirmation page.",
+    "leak": "Catering test: spend with no orders.",
+    "updated_on": "2026-11-17",
+    "last_reviewed": "2026-11-17",
+    "reviewed_at": "2026-11-17",
+    "next_review": "2026-11-20",
+    "note_asof": "as of 17 Nov",
+    "triggers": [
+      {
+        "rule": "Cost per order above $25 for 3 days",
+        "action": "Cut the weakest ad set budget by 20%"
+      }
+    ],
+    "tests": [
+      {
+        "name": "Catering lunch boxes for offices",
+        "status": "running",
+        "owner": "Sam",
+        "hypothesis": "Office managers will order catering from a lunch-box ad.",
+        "metric": "Catering orders",
+        "budget": "$15 a day",
+        "started": "2026-11-06",
+        "read_on": "2026-11-20",
+        "result": "Early orders, then none for 7 days.",
+        "decision_rule": "No order by the read date: stop the test."
+      }
+    ],
+    "closed_tests": [],
+    "next_actions": [
+      {
+        "action": "Pause the catering test if no order by the read date",
+        "owner": "Sam",
+        "due": "2026-11-20",
+        "metric": "Catering orders",
+        "read_on": "2026-11-20",
+        "within_limits": "Yes",
+        "stop_if": "0 orders"
+      },
+      {
+        "action": "Add two new brunch photos to the local campaign",
+        "owner": "Jo (design)",
+        "due": "2026-11-20",
+        "metric": "CTR",
+        "read_on": "2026-11-20",
+        "within_limits": "Yes",
+        "stop_if": "CTR below 1%"
+      }
+    ],
+    "open_decisions": [
+      "Raise the local budget from $35 to $45 a day?"
+    ],
+    "client_asks": [
+      "Send 5 new photos of the weekend menu."
+    ],
+    "cannot_measure": [
+      "Walk-in visits from ads."
+    ],
+    "summary": {
+      "asof": "2026-11-17",
+      "today": "On track overall; the catering test is the leak.",
+      "goal": "$18 per online order.",
+      "diagnosis": "Local campaign profitable; test is not.",
+      "tracking": "Online.",
+      "leak": "Catering test.",
+      "tests": "1 test running, read on 2026-11-20"
+    }
+  },
+  "Bright Dental": {
+    "status_at_plan": "watch",
+    "mode": "steady",
+    "owner": "Sam (ads)",
+    "goal": "60+ new-patient leads a month; Google under $70 a lead, Meta under $25.",
+    "diagnosis": "Meta form leads are cheap and steady. Google whitening costs rose this week.",
+    "today": "Review 2026-11-17: whitening cost per lead up; moving $5/day from whitening to emergency.",
+    "tracking": "ONLINE. Google call conversions and Meta lead forms both firing.",
+    "leak": "Teeth whitening search campaign.",
+    "updated_on": "2026-11-17",
+    "last_reviewed": "2026-11-17",
+    "reviewed_at": "2026-11-17",
+    "next_review": "2026-11-20",
+    "note_asof": "as of 17 Nov",
+    "triggers": [
+      {
+        "rule": "Google cost per lead over $90 for a week",
+        "action": "Pause the costliest campaign"
+      }
+    ],
+    "tests": [],
+    "closed_tests": [],
+    "next_actions": [
+      {
+        "action": "Add 'free exam' as a negative keyword",
+        "owner": "Sam",
+        "due": "2026-11-20",
+        "metric": "Wasted spend",
+        "read_on": "2026-11-20",
+        "within_limits": "Yes",
+        "stop_if": ""
+      }
+    ],
+    "open_decisions": [],
+    "client_asks": [
+      "Confirm which leads booked an appointment."
+    ],
+    "cannot_measure": [
+      "Which leads became patients (no CRM link yet)."
+    ],
+    "summary": {
+      "asof": "2026-11-17",
+      "today": "Watch: whitening cost per lead rising.",
+      "goal": "60+ leads a month.",
+      "diagnosis": "Meta cheap, Google mixed.",
+      "tracking": "Online.",
+      "leak": "Whitening search.",
+      "tests": "No test running."
+    }
+  },
+  "Green Thumb Landscaping": {
+    "status_at_plan": "on_track",
+    "mode": "steady",
+    "owner": "Alex (ads)",
+    "goal": "Quote requests at $45 or less.",
+    "diagnosis": "Lawn care converts well; design is pricier but bigger jobs.",
+    "today": "Review 2026-11-17: steady. Adding negatives for DIY searches.",
+    "tracking": "ONLINE. Quote form fires on the thank-you page.",
+    "leak": "DIY searches ('how to ...').",
+    "updated_on": "2026-11-17",
+    "last_reviewed": "2026-11-17",
+    "reviewed_at": "2026-11-17",
+    "next_review": "2026-11-20",
+    "note_asof": "as of 17 Nov",
+    "triggers": [],
+    "tests": [],
+    "closed_tests": [],
+    "next_actions": [
+      {
+        "action": "Add 'how to' as a negative phrase",
+        "owner": "Alex",
+        "due": "2026-11-20",
+        "metric": "Wasted spend",
+        "read_on": "2026-11-20",
+        "within_limits": "Yes",
+        "stop_if": ""
+      }
+    ],
+    "open_decisions": [],
+    "client_asks": [],
+    "cannot_measure": [],
+    "summary": {
+      "asof": "2026-11-17",
+      "today": "On track.",
+      "goal": "$45 per quote request.",
+      "diagnosis": "Lawn care strong.",
+      "tracking": "Online.",
+      "leak": "DIY searches.",
+      "tests": "No test running."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+/.env
+/data/
+/config/clients.json
+/content/
+__pycache__/
+*.pyc
